@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^6.6.0"
+    "eslint": "^6.6.0",
+    "git-commit-msg-linter": "^3.0.0"
   }
 }
