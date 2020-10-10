@@ -1,0 +1,19 @@
+.Presentation {
+  margin-top: 6.6rem;
+  &__heading {
+    font: bold 3rem Poppins;
+
+    letter-spacing: -0.04em;
+
+    /* Dark */
+    color: #25323d;
+  }
+  &__paragraph {
+    margin-top: 1.8rem;
+    font: 1.6rem/140% Montserrat;
+    color: #62839d;
+  }
+  &__button {
+    margin-top: 2.4rem;
+  }
+}
