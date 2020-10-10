@@ -1,5 +1,5 @@
-import { PersonalIcon } from 'components/personal-icon';
 import React from 'react';
+import { PersonalIcon } from 'components/personal-icon';
 import './nav.scss';
 
 const Nav = () => (
