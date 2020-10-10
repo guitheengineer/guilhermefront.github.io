@@ -1,5 +1,14 @@
 .Presentation {
   margin-top: 6.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__call {
+    @media (min-width: 800px) {
+      width: calc(54% - 61px);
+    }
+  }
   &__heading {
     font: bold 3rem Poppins;
 
@@ -10,7 +19,7 @@
   }
   &__paragraph {
     margin-top: 1.8rem;
-    font: 1.6rem/140% Montserrat;
+    font: 1.5rem/140% Montserrat;
     color: #62839d;
   }
   &__button {
