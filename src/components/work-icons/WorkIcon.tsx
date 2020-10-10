@@ -10,7 +10,6 @@ const WorkIcon = ({ title }: Pick<IconProps, 'title'>) => {
       imgClassName={`Work__icon-img Work__icon-img--${title}`}
       title={title}
       size={28}
-      backgroundColor="#FFFFFF"
     />
   );
 };

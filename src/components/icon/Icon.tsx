@@ -16,22 +16,14 @@ export type IconProps = {
   className?: string;
   imgClassName?: string;
   size?: number;
-  backgroundColor?: string;
 };
 
-const Icon = ({
-  title,
-  className,
-  imgClassName,
-  size = 61,
-  backgroundColor = '#E3EEF7',
-}: IconProps) => {
+const Icon = ({ title, className, imgClassName, size = 61 }: IconProps) => {
   return (
     <div
       style={{
         width: `${size / 10}rem`,
         height: `${size / 10}rem`,
-        backgroundColor,
       }}
       className={`Icon ${className}`}
     >
