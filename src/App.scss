@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root,
+html,
+.App {
+  height: 100vh;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6em;
+  background-color: #f8f9fa;
+  padding: 3.4rem 7.2%;
+  overflow-x: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
