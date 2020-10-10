@@ -3,4 +3,27 @@
     box-shadow: 0px 22.9419px 13.7651px rgba(0, 59, 108, 0.06);
     border-radius: 6px;
   }
+  &__icon-img {
+    width: 1.8rem;
+    height: 1.8rem;
+    &--figma {
+      width: 1rem;
+      height: 1.4rem;
+    }
+    &--figma {
+      width: 1rem;
+      height: 1.4rem;
+    }
+    &--node {
+      width: 1.6rem;
+    }
+    &--typescript {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+    &--styled-components {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
 }

@@ -3,17 +3,13 @@ import { Icon } from 'components/icon';
 import { IconProps } from 'components/icon/Icon';
 import './work-icon.scss';
 
-const WorkIcon = ({
-  title,
-  imgStyle,
-}: Pick<IconProps, 'title' | 'imgStyle'>) => {
+const WorkIcon = ({ title }: Pick<IconProps, 'title'>) => {
   return (
     <Icon
-      className="Work__icon"
+      className={`Work__icon Work__icon--${title}`}
+      imgClassName={`Work__icon-img Work__icon-img--${title}`}
       title={title}
       size={28}
-      imgSize={18}
-      imgStyle={imgStyle}
       backgroundColor="#FFFFFF"
     />
   );
