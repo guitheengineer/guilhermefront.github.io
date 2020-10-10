@@ -1,0 +1,43 @@
+.Work {
+  display: flex;
+  padding: 0 0 0 6.53%;
+  background: #ffffff;
+  box-shadow: 0px 50px 30px rgba(0, 59, 108, 0.06);
+  border-radius: 6px;
+  height: 29rem;
+  &:first-child {
+    margin-top: 3.2rem;
+  }
+  margin-top: 3rem;
+  &__info {
+    width: 54%;
+    max-width: 15.8rem;
+  }
+
+  &__company {
+    margin-top: 2rem;
+    font: 500 1.2rem Poppins;
+    letter-spacing: 0.02em;
+    color: #40aaff;
+  }
+
+  &__title {
+    font: 500 1.6rem Poppins;
+    margin-top: 2.4rem;
+  }
+  &__roles {
+    font: 1.4rem/120% Poppins;
+    letter-spacing: 0.02em;
+    color: #859fb4;
+    margin-top: 1.1rem;
+  }
+  &__stack {
+    margin-top: 2.4rem;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+    row-gap: 1.2rem;
+  }
+  &__image {
+    overflow: hidden;
+  }
+}
