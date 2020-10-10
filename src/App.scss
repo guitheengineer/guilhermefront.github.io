@@ -11,6 +11,9 @@ html,
 .App {
   height: 100vh;
 }
+.App {
+  max-width: 890px;
+}
 
 html {
   font-size: 62.5%;
@@ -21,6 +24,22 @@ body {
   font-size: 1.6em;
   background-color: #f8f9fa;
   padding: 3.4rem 7.2%;
+
+  @media (min-width: 900px) {
+    padding: 3.4rem 11%;
+  }
+  @media (min-width: 1225px) {
+    padding: 3.4rem 17%;
+  }
+  @media (min-width: 1400px) {
+    padding: 3.4rem 22%;
+  }
+  @media (min-width: 1700px) {
+    padding: 3.4rem 28%;
+  }
+  @media (min-width: 1900px) {
+    padding: 3.4rem 28%;
+  }
   overflow-x: hidden;
 }
 
