@@ -5,5 +5,6 @@
 
 - React
 - Typescript
+- SCSS
 - Jest
 - React-Testing-Library
