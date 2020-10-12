@@ -18,13 +18,17 @@ export type IconProps = {
   size?: number;
 };
 
-const Icon = ({ title, className, imgClassName, size = 61 }: IconProps) => {
+const Icon = ({ title, className, imgClassName, size = 50 }: IconProps) => {
   return (
     <div
-      style={{
-        width: `${size / 10}rem`,
-        height: `${size / 10}rem`,
-      }}
+      style={
+        !className
+          ? {
+              width: `${size / 10}rem`,
+              height: `${size / 10}rem`,
+            }
+          : undefined
+      }
       className={`Icon ${className}`}
     >
       <img
