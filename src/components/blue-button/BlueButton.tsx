@@ -3,7 +3,7 @@ import './blue-button.scss';
 
 type Props = {
   children: ReactNode;
-  className: string;
+  className?: string;
 };
 
 const BlueButton = ({ children, className }: Props) => (
