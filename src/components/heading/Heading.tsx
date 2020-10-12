@@ -2,7 +2,7 @@ import React from 'react';
 import './heading.scss';
 
 type Props = {
-  title: 'Projects' | 'About me' | 'Skills';
+  title: 'Projects' | 'About me' | 'Skills' | 'Education';
   className?: string;
 };
 
