@@ -57,7 +57,7 @@
   &__name {
     margin-top: 1.4rem;
     color: #25323d;
-    font: bold 1.5rem Montserrat;
+    font: bold 1.58rem Montserrat;
     text-align: center;
   }
   &__location {
@@ -72,17 +72,17 @@
   &__icon {
     position: absolute;
     &--react {
-      left: -184px;
+      left: -164px;
       top: -110px;
     }
     &--redux {
-      left: -189px;
+      left: -169px;
       top: 0px;
       background: #f4eefb;
     }
     &--typescript {
-      left: -145px;
-      top: 98px;
+      left: -135px;
+      top: 88px;
     }
     &--mongo {
       top: 110px;
@@ -103,13 +103,13 @@
       top: -92px;
     }
     &--node {
-      top: -165.3px;
+      top: -150px;
       left: 32px;
       background: #e3fce3;
     }
     &--css {
-      left: -84px;
-      top: -169px;
+      left: -74px;
+      top: -152px;
     }
   }
 }

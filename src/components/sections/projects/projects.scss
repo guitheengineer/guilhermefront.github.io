@@ -1,0 +1,15 @@
+.Projects {
+  margin-top: 12.1rem;
+  @media (min-width: 800px) {
+    margin-top: 17.1rem;
+  }
+  &__works {
+    margin-top: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(274px, 1fr));
+    @media (min-width: 340px) {
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    }
+  }
+}

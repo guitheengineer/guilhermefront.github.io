@@ -1,18 +1,21 @@
 import React from 'react';
 import './projects.scss';
-import Work from '../work/Work';
-import WorkTitle from 'components/work/WorkTitle';
-import WorkInfo from 'components/work/WorkInfo';
-import WorkCompany from 'components/work/WorkCompany';
-import WorkRoles from 'components/work/WorkRoles';
-import WorkStack from 'components/work/WorkStack';
-import { WorkIcon } from 'components/work-icons';
-import WorkImage from 'components/work/WorkImage';
+import {
+  Work,
+  WorkCompany,
+  WorkImage,
+  WorkInfo,
+  WorkRoles,
+  WorkStack,
+  WorkTitle,
+} from 'components/work';
+import { WorkIcon } from 'components/work-icon';
+import { Heading } from 'components/heading';
 
 const Projects = ({}) => {
   return (
     <article className="Projects">
-      <h6 className="Projects__heading">Projects</h6>
+      <Heading title="Projects" />
       <div className="Projects__works">
         <Work>
           <WorkInfo>

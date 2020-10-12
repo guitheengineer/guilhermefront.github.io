@@ -13,7 +13,9 @@ const Presentation = ({}) => {
           continuous improvements. My goal is to always improve people daily
           lives by providing quality software
         </p>
-        <BlueButton className="Presentation__button">Contact</BlueButton>
+        <a href="mailto:gsdevelopercontact@gmail.com">
+          <BlueButton className="Presentation__button">Contact</BlueButton>
+        </a>
       </section>
       <Profile />
     </div>
