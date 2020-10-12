@@ -32,7 +32,7 @@ const Icon = ({ title, className, imgClassName, size = 50 }: IconProps) => {
       className={`Icon ${className}`}
     >
       <img
-        src={require(`assets/skill-icons/${title}.png`)}
+        src={require(`assets/skill-icons/${title}.svg`)}
         className={imgClassName}
       />
     </div>

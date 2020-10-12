@@ -6,7 +6,7 @@ type Props = { image: 'first' };
 const WorkImage = ({ image }: Props) => {
   return (
     <div className="Work__image">
-      <img alt="work demo" src={require(`assets/work-images/${image}.png`)} />
+      <img alt="work demo" src={require(`assets/work-images/${image}.svg`)} />
     </div>
   );
 };
