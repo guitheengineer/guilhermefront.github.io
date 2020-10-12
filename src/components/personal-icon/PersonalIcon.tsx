@@ -18,7 +18,7 @@ const PersonalIcon = ({ title, className, size = 19 }: Props) => (
     <img
       className={`Personal-icon ${className}`}
       style={{ height: `${size}px` }}
-      src={require(`assets/personal-icons/${title}.png`)}
+      src={require(`assets/personal-icons/${title}.svg`)}
     />
   </a>
 );
