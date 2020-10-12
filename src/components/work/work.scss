@@ -8,7 +8,10 @@
   background: #ffffff;
   box-shadow: 0px 50px 30px rgba(0, 59, 108, 0.06);
   border-radius: 6px;
-  height: 29rem;
+  height: 30rem;
+  @media (min-width: 380px) {
+    height: 29rem;
+  }
   justify-content: space-between;
   transition: all 0.3s;
   &:hover {
@@ -46,5 +49,7 @@
   }
   &__image {
     overflow: hidden;
+    position: relative;
+    left: 1.3rem;
   }
 }
