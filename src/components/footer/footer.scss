@@ -1,0 +1,55 @@
+.Footer {
+  height: 10.1rem;
+  background: #e7eff4;
+  position: absolute;
+  width: 100%;
+  left: 0;
+
+  &__content {
+    padding: 0 7.2% 0 7.2%;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    @media (min-width: 600px) {
+      justify-content: space-between;
+    }
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    height: inherit;
+    @media (min-width: 900px) {
+      padding: 3.4rem 11%;
+    }
+    @media (min-width: 1225px) {
+      padding: 3.4rem 17%;
+    }
+    @media (min-width: 1400px) {
+      padding: 3.4rem 22%;
+    }
+    @media (min-width: 1700px) {
+      padding: 3.4rem 28%;
+    }
+    @media (min-width: 1900px) {
+      padding: 3.4rem 28%;
+    }
+  }
+  &__paragraph {
+    font: 900 1.2rem/140% Montserrat;
+    color: #5d87a8;
+    letter-spacing: -0.02em;
+    &--feedback {
+      display: none;
+    }
+    &--contact {
+      display: none;
+    }
+    @media (min-width: 600px) {
+      &--feedback {
+        display: block;
+      }
+      &--contact {
+        display: block;
+      }
+    }
+  }
+}
