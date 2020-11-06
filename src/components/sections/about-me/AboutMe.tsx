@@ -3,7 +3,7 @@ import './about-me.scss';
 import { BlueButton } from 'components/blue-button';
 import { Heading } from 'components/heading';
 
-const AboutMe = ({}) => {
+const AboutMe = () => {
   return (
     <div className="About-me">
       <div className="About-me__text-container">
@@ -13,7 +13,10 @@ const AboutMe = ({}) => {
           solved in those games are also present in the programming area, which
           is where I found myself able to build useful tools for people. So,
           since I entered college at seventeen, I decided to dedicate all my
-          efforts in this area. Currently I’m working intensively with React.
+          efforts in this area. Currently I’m working intensively with React. In
+          my free time I love studying UX/UI concepts to reach a better looking
+          and user experience of my personal projects and to give suggestions to
+          my clients.
         </p>
         <Heading
           className="About-me__heading About-me__heading--education"
@@ -24,8 +27,9 @@ const AboutMe = ({}) => {
         </h6>
         <p className="About-me__date">FEB 2019 - MAY 2021 / São Paulo</p>
         <p className="About-me__myself About-me__myself--course">
-          We simulate the creation of startups and the actual development of
-          products involved in the process using front-end and back-end
+          In addition to the traditional learning and college subjects, we
+          simulate the creation of startups and work on the development of the
+          invented product, from planning to practice using Front and Back end
           technologies.
         </p>
         <a
