@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import React from 'react';
 import './icon.scss';
 
 export type IconProps = {
@@ -32,6 +32,7 @@ const Icon = ({ title, className, imgClassName, size = 50 }: IconProps) => {
       className={`Icon ${className}`}
     >
       <img
+        alt={`${title} icon`}
         src={require(`assets/skill-icons/${title}.svg`)}
         className={imgClassName}
       />
