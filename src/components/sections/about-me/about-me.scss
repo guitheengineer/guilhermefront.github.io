@@ -6,15 +6,15 @@
   &__text-container {
     flex-basis: 100%;
     @media (min-width: 800px) {
-      flex-basis: 51.1%;
+      flex-basis: 46.3%;
     }
   }
   &__myself {
     margin-top: 1.6rem;
-    font: 1.4rem/140% Montserrat;
+    font: 400 1.4rem/140% Montserrat;
     color: #486f8e;
     &--course {
-      margin-top: 0.6rem;
+      margin-top: 1.4rem;
     }
   }
 
@@ -26,17 +26,17 @@
   &__course {
     margin-top: 1.6rem;
     font: 500 1.4rem Montserrat;
-    color: #555d6d;
+    color: #486f8e;
   }
   &__date {
     margin-top: 0.7rem;
-    font: 400 1.3rem Mallanna;
-    color: #848b9a;
+    font: 400 1.3rem Montserrat;
+    color: #6a92b4;
   }
   &__button {
     width: 17.7rem;
     height: 4.1rem;
-    margin: 2.6rem 0 14.6rem 0;
+    margin: 2.8rem 0 14.6rem 0;
   }
   &__img {
     display: none;
