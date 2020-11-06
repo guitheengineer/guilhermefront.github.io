@@ -12,7 +12,7 @@ import {
 import { WorkIcon } from 'components/work-icon';
 import { Heading } from 'components/heading';
 
-const Projects = ({}) => {
+const Projects = () => {
   return (
     <article className="Projects">
       <Heading title="Projects" />
