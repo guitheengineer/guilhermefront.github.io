@@ -7,7 +7,7 @@ const Profile = () => {
     <aside className="Profile">
       <div className="Profile__info">
         <img
-          alt="picture"
+          alt="profile"
           src={require('assets/profile-picture.png')}
           className="Profile__picture"
         />
