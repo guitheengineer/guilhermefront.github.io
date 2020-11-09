@@ -9,16 +9,14 @@ type Props = Pick<IconProps, 'title'> & {
   level: 'Advanced' | 'Intermediary' | 'Basic';
 };
 
-const Skill = ({ title, percentage, level }: Props) => {
-  return (
-    <div className="Skill">
-      <Icon imgClassName="Skill__img" className="Skill__icon" title={title} />
-      <div className="Skill__progress">
-        <span className="Skill__value" style={{ width: `${percentage}%` }} />
-      </div>
+const Skill = ({ title, percentage, level }: Props) => (
+  <div className="Skill">
+    <Icon imgClassName="Skill__img" className="Skill__icon" title={title} />
+    <div className="Skill__progress">
+      <span className="Skill__value" style={{ width: `${percentage}%` }} />
       <p className="Skill__level">{level}</p>
     </div>
-  );
-};
+  </div>
+);
 
 export default Skill;
