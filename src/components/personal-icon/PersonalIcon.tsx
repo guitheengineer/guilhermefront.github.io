@@ -7,6 +7,11 @@ type Props = {
   size?: number;
 };
 
+const icons = require.context(
+  'assets/personal-icons',
+  false,
+  /\.(png|jpe?g|svg)$/
+);
 const PersonalIcon = ({ title, className, size = 19 }: Props) => (
   <a
     href={`${
@@ -19,7 +24,7 @@ const PersonalIcon = ({ title, className, size = 19 }: Props) => (
       alt={`${title} icon`}
       className={`Personal-icon ${className}`}
       style={{ height: `${size}px` }}
-      src={require(`assets/personal-icons/${title}.svg`)}
+      src={icons(`./${title}.svg`).default}
     />
   </a>
 );

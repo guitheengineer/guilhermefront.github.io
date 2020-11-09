@@ -18,26 +18,30 @@ export type IconProps = {
   size?: number;
 };
 
-const Icon = ({ title, className, imgClassName, size = 50 }: IconProps) => {
-  return (
-    <div
-      style={
-        !className
-          ? {
-              width: `${size / 10}rem`,
-              height: `${size / 10}rem`,
-            }
-          : undefined
-      }
-      className={`Icon ${className}`}
-    >
-      <img
-        alt={`${title} icon`}
-        src={require(`assets/skill-icons/${title}.svg`)}
-        className={imgClassName}
-      />
-    </div>
-  );
-};
+const icons = require.context(
+  'assets/skill-icons',
+  false,
+  /\.(png|jpe?g|svg)$/
+);
+
+const Icon = ({ title, className, imgClassName, size = 50 }: IconProps) => (
+  <div
+    style={
+      !className
+        ? {
+            width: `${size / 10}rem`,
+            height: `${size / 10}rem`,
+          }
+        : undefined
+    }
+    className={`Icon ${className}`}
+  >
+    <img
+      alt={`${title} icon`}
+      src={icons(`./${title}.svg`).default}
+      className={imgClassName}
+    />
+  </div>
+);
 
 export default Icon;
