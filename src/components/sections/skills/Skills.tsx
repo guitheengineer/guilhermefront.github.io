@@ -2,6 +2,7 @@ import { Heading } from 'components/heading';
 import { Skill } from 'components/skill';
 import React, { useState } from 'react';
 import './skills.scss';
+import chevronDown from 'assets/chevron-down.svg';
 
 const Skills = () => {
   const [seeMore, setSeeMore] = useState(false);
@@ -27,6 +28,7 @@ const Skills = () => {
       ) : null}
 
       <button
+        type="button"
         className="Skills__see-more"
         onClick={() => setSeeMore((prevState) => !prevState)}
       >
@@ -35,7 +37,7 @@ const Skills = () => {
           className="Skills__chevron-down"
           alt="chevron-down"
           style={{ transform: seeMore ? 'rotate(180deg)' : 'initial' }}
-          src={require('assets/chevron-down.svg')}
+          src={chevronDown}
         />
       </button>
     </article>
