@@ -1,7 +1,7 @@
 .Work {
   display: flex;
   cursor: pointer;
-  padding: 0 0 0 5%;
+  padding: 0 5% 0 5%;
   @media (min-width: 420px) {
     padding: 0 6%;
   }
@@ -22,6 +22,7 @@
   &__info {
     width: 54%;
     max-width: 15.8rem;
+    text-align: left;
   }
 
   &__company {
@@ -33,7 +34,7 @@
 
   &__title {
     font: 500 1.6rem Poppins;
-    margin-top: 2.4rem;
+    margin-top: 2rem;
   }
   &__roles {
     font: 1.4rem/120% Poppins;
@@ -45,11 +46,15 @@
     margin-top: 2.4rem;
     display: grid;
     grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
-    row-gap: 1.2rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 1.5rem;
   }
   &__image {
     overflow: hidden;
     position: relative;
-    left: 1.3rem;
+    margin-left: 1.3rem;
+    box-shadow: 0px 4px 10px rgba(146, 171, 191, 0.11);
   }
 }

@@ -68,50 +68,49 @@
   }
   &__icons {
     position: absolute;
+    width: 23.5rem;
+    height: 23.5rem;
   }
   &__icon {
     width: 50px;
     height: 50px;
     position: absolute;
     &--react {
-      left: -164px;
-      top: -110px;
+      left: -24px;
+      top: -17px;
     }
     &--redux {
-      left: -169px;
-      top: 0px;
+      left: -49px;
+      top: 85px;
       background: #f4eefb;
     }
     &--typescript {
-      left: -135px;
-      top: 88px;
+      top: 190px;
+      left: -23px;
     }
     &--mongo {
-      top: 110px;
-      left: -37px;
+      left: 90px;
+      top: 224px;
       background: #eefbee;
     }
     &--html {
-      top: 98px;
-      left: 62px;
+      left: 206px;
+      top: 193px;
     }
     &--sass {
-      left: 124px;
+      left: 220px;
+      top: 88px;
       background: #fbeef5;
     }
-    &--styled-components {
-      background: #fbeef5;
-      left: 118px;
-      top: -92px;
-    }
+
     &--node {
-      top: -150px;
-      left: 32px;
+      left: 208px;
+      top: -15px;
       background: #e3fce3;
     }
     &--css {
-      left: -74px;
-      top: -152px;
+      left: 90px;
+      top: -42px;
     }
   }
 }

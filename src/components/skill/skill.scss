@@ -17,12 +17,15 @@
     box-shadow: 0px 22.9419px 13.7651px rgba(0, 59, 108, 0.06);
     border-radius: 5px;
     background: #ffffff;
-    margin-right: 2.5rem;
+    margin-right: 1.7rem;
     width: 40px;
     height: 35px;
     @media (min-width: 520px) {
       width: 50px;
       height: 45px;
+    }
+    @media (min-width: 400px) {
+      margin-right: 2.5rem;
     }
   }
   &__img {
@@ -33,6 +36,7 @@
     }
   }
   &__progress {
+    position: relative;
     background: #ffffff;
     box-shadow: 0px 5px 19px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
@@ -51,7 +55,6 @@
     color: #555d6d;
     font: 500 1.4rem/140% Montserrat;
     letter-spacing: -0.02em;
-    top: -14px;
-    margin-left: 25px;
+    top: -26px;
   }
 }
