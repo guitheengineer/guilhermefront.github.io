@@ -6,8 +6,8 @@ type Props = {
   className?: string;
 };
 
-const Heading = ({ title, className }: Props) => {
-  return <h6 className={`Heading ${className}`}>{title}</h6>;
-};
+const Heading = ({ title, className }: Props) => (
+  <h6 className={`Heading ${className}`}>{title}</h6>
+);
 
 export default Heading;
