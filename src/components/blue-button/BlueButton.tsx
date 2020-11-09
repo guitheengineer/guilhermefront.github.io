@@ -7,7 +7,9 @@ type Props = {
 };
 
 const BlueButton = ({ children, className }: Props) => (
-  <button className={`Blue-button ${className}`}>{children}</button>
+  <button type="button" className={`Blue-button ${className}`}>
+    {children}
+  </button>
 );
 
 export default BlueButton;
