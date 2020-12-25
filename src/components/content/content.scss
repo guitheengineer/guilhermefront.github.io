@@ -1,0 +1,33 @@
+.content {
+  margin-top: 15.8rem;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  &__text {
+  }
+  &__title {
+    font: 500 2.6rem Montserrat;
+    color: #2a343c;
+    text-transform: capitalize;
+  }
+  &__description {
+    margin-top: 1.6rem;
+    font: 500 1.4rem Montserrat;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #5c8594;
+  }
+
+  &__illustration {
+    flex: 1;
+    margin-left: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img {
+    width: 93%;
+    min-width: 30rem;
+    max-width: 35rem;
+  }
+}

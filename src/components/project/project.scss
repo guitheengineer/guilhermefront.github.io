@@ -1,0 +1,69 @@
+%bluefont {
+  font: 900 1.2rem Montserrat;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #40aaff;
+}
+.Project {
+  margin-top: 6.6rem;
+  padding: 3.4rem 7%;
+  max-width: 120rem;
+  @media (min-width: 1000px) {
+    padding: 3.4rem 20%;
+  }
+
+  &__presentation {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    flex-basis: 67%;
+  }
+  &__role {
+    @extend %bluefont;
+  }
+  &__title {
+    margin-top: 0.7rem;
+    font: 600 3rem Poppins;
+    line-height: 140%;
+    color: #25323d;
+  }
+  &__description {
+    margin-top: 0.8rem;
+    line-height: 140%;
+    font: 600 1.4rem Montserrat;
+    letter-spacing: -0.02em;
+    color: #859fb4;
+  }
+  &__link {
+    @extend %bluefont;
+    display: block;
+    margin-top: 1.2rem;
+  }
+  &__icons {
+    margin-top: 2.4rem;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+    gap: 1.8rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  &__icon {
+    width: 3.4rem;
+    height: 3.4rem;
+    background-color: white;
+    border-radius: 6px;
+  }
+  &__icon-img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  &__image {
+    margin-left: 7.5rem;
+    width: 100%;
+    max-width: 38.5rem;
+    height: 100%;
+    display: block;
+  }
+}

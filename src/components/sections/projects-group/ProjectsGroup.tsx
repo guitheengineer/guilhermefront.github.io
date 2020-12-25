@@ -1,5 +1,5 @@
 import React from 'react';
-import './projects.scss';
+import './projects-group.scss';
 import {
   Work,
   WorkCompany,
@@ -12,10 +12,10 @@ import {
 import { WorkIcon } from 'components/work-icon';
 import { Heading } from 'components/heading';
 
-const Projects = () => (
-  <article className="Projects">
+const ProjectsGroup = () => (
+  <article className="Projects-group">
     <Heading title="Projects" />
-    <div className="Projects__works">
+    <div className="Projects-group__works">
       <Work title="Quizby">
         <WorkInfo>
           <WorkCompany>Personal project</WorkCompany>
@@ -87,4 +87,4 @@ const Projects = () => (
     </div>
   </article>
 );
-export default Projects;
+export default ProjectsGroup;
