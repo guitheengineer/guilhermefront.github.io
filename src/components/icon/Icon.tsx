@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './icon.scss';
 
 export type IconProps = {
@@ -18,30 +18,31 @@ export type IconProps = {
   size?: number;
 };
 
-const icons = require.context(
-  'assets/skill-icons',
-  false,
-  /\.(png|jpe?g|svg)$/
-);
+const Icon = ({ title, className, imgClassName, size = 50 }: IconProps) => {
+  const [currentImg, setCurrentImg] = useState('');
+  useEffect(() => {
+    const requireImage = async () => {
+      const img = await import(`assets/skill-icons/${title}.svg`);
+      setCurrentImg(img.default);
+    };
+    requireImage();
+  }, []);
 
-const Icon = ({ title, className, imgClassName, size = 50 }: IconProps) => (
-  <div
-    style={
-      !className
-        ? {
-            width: `${size / 10}rem`,
-            height: `${size / 10}rem`,
-          }
-        : undefined
-    }
-    className={`Icon ${className}`}
-  >
-    <img
-      alt={`${title} icon`}
-      src={icons(`./${title}.svg`).default}
-      className={imgClassName}
-    />
-  </div>
-);
+  return (
+    <div
+      style={
+        !className
+          ? {
+              width: `${size / 10}rem`,
+              height: `${size / 10}rem`,
+            }
+          : undefined
+      }
+      className={`Icon ${className}`}
+    >
+      <img alt={`${title} icon`} src={currentImg} className={imgClassName} />
+    </div>
+  );
+};
 
 export default Icon;

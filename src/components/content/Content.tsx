@@ -1,31 +1,52 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useEffect, useState } from 'react';
 import './content.scss';
 
 type Props = {
   children: ReactNode;
-  type: 'story' | 'challenges' | 'learned';
+  type: 'story' | 'challenges' | 'lessons learned';
+  className?: string;
+  marginTop?: number;
 };
 
-const icons = require.context(
-  'assets/content-illustrations',
-  false,
-  /\.(png|jpe?g|svg)$/
-);
+export const Content = ({ children, type, className, marginTop }: Props) => {
+  const [currentImg, setCurrentImg] = useState();
+  useEffect(() => {
+    const requireImage = async () => {
+      const img = await import(`assets/content-illustrations/${type}.svg`);
+      setCurrentImg(img.default);
+    };
+    requireImage();
+  }, []);
 
-export const Content = ({ children, type }: Props) => (
-  <div className="content">
-    <div className="content__text">
-      <h1 className="content__title">{type}</h1>
-      <p className="content__description">{children}</p>
-    </div>
-    {type === 'learned' || type === 'challenges' ? (
-      <div className="content__illustration">
-        <img
-          className="content__img"
-          alt="illustration"
-          src={icons(`./${type}.svg`).default}
-        />
+  return (
+    <div
+      className="Content"
+      style={{
+        marginTop: marginTop
+          ? marginTop
+          : type === 'story'
+          ? 158
+          : type === 'lessons learned'
+          ? 121
+          : 0,
+      }}
+    >
+      {type === 'lessons learned' ? (
+        <div className={`Content__illustration--lessons-learned ${className}`}>
+          <img className="Content__img" alt="illustration" src={currentImg} />
+        </div>
+      ) : null}
+      <div className="Content__text">
+        <h1 className="Content__title">
+          {type.charAt(0).toUpperCase() + type.slice(1)}
+        </h1>
+        <p className="Content__description">{children}</p>
       </div>
-    ) : null}
-  </div>
-);
+      {type === 'challenges' ? (
+        <div className={`Content__illustration ${className}`}>
+          <img className="Content__img" alt="illustration" src={currentImg} />
+        </div>
+      ) : null}
+    </div>
+  );
+};

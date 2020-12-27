@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './personal-icon.scss';
 
 type Props = {
@@ -7,26 +7,33 @@ type Props = {
   size?: number;
 };
 
-const icons = require.context(
-  'assets/personal-icons',
-  false,
-  /\.(png|jpe?g|svg)$/
-);
-const PersonalIcon = ({ title, className, size = 19 }: Props) => (
-  <a
-    href={`${
-      title === 'github'
-        ? 'https://github.com/gsdeveloper'
-        : 'https://www.linkedin.com/in/guilherme-samuel-2aa7aa19b/'
-    }`}
-  >
-    <img
-      alt={`${title} icon`}
-      className={`Personal-icon ${className}`}
-      style={{ height: `${size}px` }}
-      src={icons(`./${title}.svg`).default}
-    />
-  </a>
-);
+const PersonalIcon = ({ title, className, size = 19 }: Props) => {
+  const [currentImg, setCurrentImg] = useState('');
+
+  useEffect(() => {
+    const imageRequire = async () => {
+      const img = await import(`assets/personal-icons/${title}.svg`);
+      setCurrentImg(img.default);
+    };
+    imageRequire();
+  }, []);
+
+  return (
+    <a
+      href={`${
+        title === 'github'
+          ? 'https://github.com/gsdeveloper'
+          : 'https://www.linkedin.com/in/guilherme-samuel-2aa7aa19b/'
+      }`}
+    >
+      <img
+        alt={`${title} icon`}
+        className={`Personal-icon ${className}`}
+        style={{ height: `${size}px` }}
+        src={currentImg}
+      />
+    </a>
+  );
+};
 
 export default PersonalIcon;
