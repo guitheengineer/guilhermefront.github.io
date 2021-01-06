@@ -14,7 +14,7 @@ import { Heading } from 'components/heading';
 
 const ProjectsGroup = () => (
   <article className="Projects-group">
-    <Heading title="Projects" />
+    <Heading>Projects</Heading>
     <div className="Projects-group__works">
       <Work title="Quizby">
         <WorkInfo>

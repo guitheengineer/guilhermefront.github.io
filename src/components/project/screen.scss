@@ -1,0 +1,33 @@
+.Screens {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 50px;
+  &__item {
+    margin-top: 32px;
+    flex-basis: 30%;
+    @media (max-width: 592px) {
+      margin-top: 32px;
+      flex-basis: 45%;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: #2a343c;
+  }
+  &__img {
+    margin-top: 11px;
+    width: 100%;
+    height: auto;
+  }
+  &__paragraph {
+    margin-top: 13px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #507f91;
+  }
+}

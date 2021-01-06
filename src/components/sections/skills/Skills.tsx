@@ -8,7 +8,7 @@ const Skills = () => {
   const [seeMore, setSeeMore] = useState(false);
   return (
     <article className="Skills">
-      <Heading className="Skills__heading" title="Skills" />
+      <Heading className="Skills__heading">Skills</Heading>
       <Skill title="react" percentage={70} level="Intermediary" />
       <Skill title="html" percentage={73} level="Intermediary" />
       <Skill title="css" percentage={73} level="Intermediary" />

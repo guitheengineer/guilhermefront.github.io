@@ -40,9 +40,10 @@
   }
   &__img {
     margin-left: 65px;
-    display: none;
-    @media (min-width: 800px) {
-      display: block;
+    display: block;
+    @media (max-width: 800px) {
+      margin: 24px 0 24px 0;
+      height: 250px;
     }
   }
 }
