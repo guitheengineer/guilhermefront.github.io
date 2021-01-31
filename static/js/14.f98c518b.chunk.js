@@ -1,0 +1,2 @@
+(this["webpackJsonpportfolio-gsdeveloper"]=this["webpackJsonpportfolio-gsdeveloper"]||[]).push([[14],{57:function(e,o,s){"use strict";s.r(o),o.default=s.p+"static/media/redux.98c4fbce.svg"}}]);
+//# sourceMappingURL=14.f98c518b.chunk.js.map

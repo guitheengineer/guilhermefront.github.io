@@ -1,0 +1,2 @@
+(this["webpackJsonpportfolio-gsdeveloper"]=this["webpackJsonpportfolio-gsdeveloper"]||[]).push([[8],{51:function(s,e,o){"use strict";o.r(e),e.default=o.p+"static/media/css.b4b6a18f.svg"}}]);
+//# sourceMappingURL=8.3987df28.chunk.js.map
