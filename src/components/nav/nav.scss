@@ -1,10 +1,11 @@
 .Nav {
   display: flex;
   justify-content: space-between;
+
   &__title {
     font: 500 1.4rem Poppins;
     letter-spacing: -0.04em;
-    color: #19192e;
+    color: hsla(207, 14%, 37%, 1);
   }
   &__list {
     display: flex;
