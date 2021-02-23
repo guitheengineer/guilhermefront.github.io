@@ -1,12 +1,15 @@
 .Content {
   margin-top: 15.8rem;
   display: flex;
+
+  justify-content: space-between;
+  flex: 1;
+
   @media (max-width: 768px) {
     flex-wrap: wrap;
   }
-  justify-content: space-between;
-  flex: 1;
   &__text {
+    max-width: 42rem;
   }
   &__title {
     font: 500 2.6rem Montserrat;
@@ -25,33 +28,29 @@
 
   &__illustration {
     flex: 1;
-    margin-left: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    &--lessons-learned {
-      margin: 0 70px 0 0;
+    margin-left: 7rem;
+    &--challenges {
+      margin: 0 7rem 0 0;
     }
 
     @media (max-width: 768px) {
-      margin: 34px 0 28px 0;
+      margin: 40px 0 40px 0;
       justify-content: flex-start;
       &--story {
-        margin: 30px 0 28px 0;
+        margin: 40px 0 40px 0;
       }
     }
   }
   &__img {
-    &--challenges {
-      margin-top: -80px;
-    }
     width: 93%;
     min-width: 30rem;
     max-width: 35rem;
     @media (max-width: 768px) {
       min-width: 0;
-      max-width: 26rem;
+      max-width: 20rem;
     }
   }
 }
