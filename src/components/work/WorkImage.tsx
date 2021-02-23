@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './work.scss';
 
-type Props = { image: 'first' };
+type ImageProps = { image: 'first' };
 
-const WorkImage = ({ image }: Props) => {
+const WorkImage = ({ image }: ImageProps) => {
   const [currentImg, setCurrentImg] = useState('');
 
   useEffect(() => {
-    const requireImage = async () => {
-      const img = await import(`assets/work-images/${image}.png`);
-      setCurrentImg(img.default);
-    };
-    requireImage();
+    import(`assets/work-images/${image}.png`).then((img) =>
+      setCurrentImg(img.default)
+    );
   }, []);
 
   return (

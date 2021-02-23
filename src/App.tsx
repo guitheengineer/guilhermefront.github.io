@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.scss';
 import { Router } from '@reach/router';
 import { Home } from 'components/home';

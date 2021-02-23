@@ -1,4 +1,3 @@
-import React from 'react';
 import './about-me.scss';
 import { BlueButton } from 'components/blue-button';
 import { Heading } from 'components/heading';

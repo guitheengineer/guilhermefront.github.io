@@ -1,5 +1,5 @@
 import { Icon } from 'components/icon';
-import React from 'react';
+
 import './profile.scss';
 import profilePicture from 'assets/profile-picture.png';
 
@@ -11,7 +11,7 @@ const Profile = () => (
     </div>
     <div className="Profile__other-info">
       <h3 className="Profile__name">Guilherme Samuel</h3>
-      <p className="Profile__location">São Paulo</p>
+      <p className="Profile__location">São Paulo - Brasil</p>
     </div>
     <ul className="Profile__icons">
       <Icon className="Profile__icon Profile__icon--react" title="react" />

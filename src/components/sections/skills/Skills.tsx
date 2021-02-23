@@ -1,6 +1,6 @@
 import { Heading } from 'components/heading';
 import { Skill } from 'components/skill';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './skills.scss';
 import chevronDown from 'assets/chevron-down.svg';
 
