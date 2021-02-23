@@ -1,27 +1,25 @@
-import React, { useEffect, useState, ReactNode } from 'react';
+import React, { useEffect, useState } from 'react';
 import './screen.scss';
 
 type Props = {
-  name: string;
-  children: ReactNode;
+  title: string;
+  description: string;
 };
 
-const Screen = ({ name, children }: Props) => {
+const Screen = ({ title, description }: Props) => {
   const [currentImg, setCurrentImg] = useState('');
 
   useEffect(() => {
-    const importImage = async () => {
-      const img = await import(`assets/screens/${name.toLowerCase()}.png`);
-      setCurrentImg(img.default);
-    };
-    importImage();
+    import(`assets/screens/${title.toLowerCase()}.png`).then((img) =>
+      setCurrentImg(img.default)
+    );
   }, []);
 
   return (
     <li className="Screens__item">
-      <h3 className="Screens__title">{name}</h3>
+      <h3 className="Screens__title">{title}</h3>
       <img className="Screens__img" src={currentImg} />
-      <p className="Screens__paragraph">{children}</p>
+      <p className="Screens__paragraph">{description}</p>
     </li>
   );
 };
