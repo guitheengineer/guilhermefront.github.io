@@ -9,21 +9,21 @@ const Skills = () => {
   return (
     <article className="Skills">
       <Heading className="Skills__heading">Skills</Heading>
-      <Skill title="react" percentage={70} level="Intermediary" />
-      <Skill title="html" percentage={73} level="Intermediary" />
-      <Skill title="css" percentage={73} level="Intermediary" />
+      <Skill title="react" percentage={73} level="Intermediary to advanced" />
       <Skill title="typescript" percentage={55} level="Intermediary" />
+      <Skill title="redux" percentage={63} level="Intermediary" />
+      <Skill title="css" percentage={78} level="Intermediary to advanced" />
+      <Skill title="html" percentage={73} level="Intermediary to advanced" />
       {seeMore ? (
         <>
-          <Skill title="redux" percentage={73} level="Intermediary" />
-          <Skill title="mongo" percentage={40} level="Basic" />
+          <Skill title="mongo" percentage={35} level="Basic" />
           <Skill title="node" percentage={40} level="Basic" />
           <Skill
             title="styled-components"
             percentage={65}
             level="Intermediary"
           />
-          <Skill title="figma" percentage={75} level="Intermediary" />
+          <Skill title="figma" percentage={70} level="Intermediary" />
         </>
       ) : null}
 

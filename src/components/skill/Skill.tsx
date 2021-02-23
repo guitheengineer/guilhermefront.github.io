@@ -1,4 +1,3 @@
-import React from 'react';
 import './skill.scss';
 import { Icon } from 'components/icon';
 import { IconProps } from 'components/icon/Icon';
@@ -6,7 +5,7 @@ import { IconProps } from 'components/icon/Icon';
 type Props = Pick<IconProps, 'title'> & {
   title: string;
   percentage: number;
-  level: 'Advanced' | 'Intermediary' | 'Basic';
+  level: 'Advanced' | 'Intermediary' | 'Intermediary to advanced' | 'Basic';
 };
 
 const Skill = ({ title, percentage, level }: Props) => (
