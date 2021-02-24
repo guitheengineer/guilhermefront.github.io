@@ -30,15 +30,19 @@
     font: 500 1.2rem Poppins;
     letter-spacing: 0.02em;
     color: #40aaff;
+    text-transform: capitalize;
   }
 
   &__title {
     font: 500 1.6rem Poppins;
     margin-top: 2rem;
+    text-transform: capitalize;
   }
   &__roles {
     font: 1.4rem/120% Poppins;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
+    font-weight: 400;
     color: #859fb4;
     margin-top: 1.1rem;
   }
