@@ -1,18 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './icon.scss';
+import { Tech } from 'types';
 
 export type IconProps = {
-  title:
-    | 'react'
-    | 'redux'
-    | 'sass'
-    | 'styled-components'
-    | 'mongo'
-    | 'node'
-    | 'html'
-    | 'css'
-    | 'figma'
-    | 'typescript';
+  title: Tech;
   className?: string;
   imgClassName?: string;
   size?: number;
@@ -21,11 +12,9 @@ export type IconProps = {
 const Icon = ({ title, className, imgClassName, size = 50 }: IconProps) => {
   const [currentImg, setCurrentImg] = useState('');
   useEffect(() => {
-    const requireImage = async () => {
-      const img = await import(`assets/skill-icons/${title}.svg`);
-      setCurrentImg(img.default);
-    };
-    requireImage();
+    import(`assets/skill-icons/${title}.svg`).then((img) =>
+      setCurrentImg(img.default)
+    );
   }, []);
 
   return (
@@ -40,7 +29,7 @@ const Icon = ({ title, className, imgClassName, size = 50 }: IconProps) => {
       }
       className={`Icon ${className}`}
     >
-      <img alt={`${title} icon`} src={currentImg} className={imgClassName} />
+      <img alt={title} src={currentImg} className={imgClassName} />
     </div>
   );
 };

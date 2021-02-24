@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './personal-icon.scss';
 
 type Props = {
@@ -11,11 +11,9 @@ const PersonalIcon = ({ title, className, size = 19 }: Props) => {
   const [currentImg, setCurrentImg] = useState('');
 
   useEffect(() => {
-    const imageRequire = async () => {
-      const img = await import(`assets/personal-icons/${title}.svg`);
-      setCurrentImg(img.default);
-    };
-    imageRequire();
+    import(`assets/personal-icons/${title}.svg`).then((img) =>
+      setCurrentImg(img.default)
+    );
   }, []);
 
   return (

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import './project.scss';
 import { RouteComponentProps, useParams } from '@reach/router';
 import { ContactArea } from 'components/contact-area';
