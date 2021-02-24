@@ -5,7 +5,7 @@ const OtherProjects = () => {
   return (
     <div className="Other-projects">
       <h2 className="Content__title">Other projects</h2>
-      <ProjectList />
+      <ProjectList quantity={4} />
     </div>
   );
 };
