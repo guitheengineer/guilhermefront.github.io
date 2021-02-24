@@ -1,9 +1,20 @@
 .Presentation {
-  margin-top: 9rem;
-
+  margin-top: 12.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  &__strong {
+    animation: presentation-color 2s forwards;
+
+    @keyframes presentation-color {
+      from {
+        color: black;
+      }
+      to {
+        color: #40aaff;
+      }
+    }
+  }
   &__call {
     @media (min-width: 800px) {
       width: calc(54% - 61px);
@@ -11,14 +22,14 @@
   }
   &__heading {
     font: bold 3rem Poppins;
-
+    line-height: 140%;
     letter-spacing: -0.04em;
 
     /* Dark */
     color: #25323d;
   }
   &__paragraph {
-    margin-top: 1.8rem;
+    margin-top: 1.4rem;
     font: 1.5rem/140% Montserrat;
     color: #62839d;
   }
@@ -31,6 +42,6 @@
   &__present-icon {
     position: relative;
     top: 0.2rem;
-    margin-right: 0.6rem;
+    margin-right: 1.2rem;
   }
 }
