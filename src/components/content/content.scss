@@ -1,0 +1,56 @@
+.Content {
+  margin-top: 15.8rem;
+  display: flex;
+
+  justify-content: space-between;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+  &__text {
+    max-width: 42rem;
+  }
+  &__title {
+    font: 500 2.6rem Montserrat;
+    color: #2a343c;
+    &--screens {
+      margin-top: 80px;
+    }
+  }
+  &__description {
+    margin-top: 1.6rem;
+    font: 500 1.4rem Montserrat;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #5c8594;
+  }
+
+  &__illustration {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7rem;
+    &--challenges {
+      margin: 0 7rem 0 0;
+    }
+
+    @media (max-width: 768px) {
+      margin: 40px 0 40px 0;
+      justify-content: flex-start;
+      &--story {
+        margin: 40px 0 40px 0;
+      }
+    }
+  }
+  &__img {
+    width: 93%;
+    min-width: 30rem;
+    max-width: 35rem;
+    @media (max-width: 768px) {
+      min-width: 0;
+      max-width: 20rem;
+    }
+  }
+}
