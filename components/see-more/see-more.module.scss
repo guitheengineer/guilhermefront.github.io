@@ -1,0 +1,15 @@
+.see-more {
+  display: flex;
+  cursor: pointer;
+  color: #6492a4;
+  align-items: center;
+  margin-top: 12px;
+  margin-left: auto;
+  &__title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &__icon {
+    margin-left: 5px;
+  }
+}
