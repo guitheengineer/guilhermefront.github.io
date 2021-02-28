@@ -1,0 +1,20 @@
+.skills {
+  margin-top: 100px;
+  position: relative;
+  &__heading {
+    margin-bottom: 37px;
+  }
+  &__see-more {
+    position: absolute;
+    right: 0;
+    font: 500 14px/140% Montserrat;
+    letter-spacing: -0.02em;
+    color: #888888;
+    display: flex;
+    margin-top: -30px;
+    background: none;
+  }
+  &__chevron-down {
+    margin-left: 5px;
+  }
+}
