@@ -1,4 +1,11 @@
-import { Nav, ProjectsGroup, Skills, Presentation, AboutMe } from 'components';
+import {
+  Nav,
+  ProjectsGroup,
+  Skills,
+  Presentation,
+  AboutMe,
+  Footer,
+} from 'components';
 import styles from 'styles/home.module.scss';
 import Head from 'next/head';
 
@@ -30,10 +37,7 @@ const Home = () => (
     <ProjectsGroup />
     <Skills />
     <AboutMe />
-
-    {/*
-     
-      <Footer /> */}
+    <Footer />
   </div>
 );
 
