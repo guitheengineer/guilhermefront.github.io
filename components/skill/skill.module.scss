@@ -1,0 +1,36 @@
+.skill {
+  display: flex;
+  margin-top: 37px;
+
+  align-items: center;
+  position: relative;
+  &__value {
+    background: #10daff;
+    border-radius: 5px;
+    height: inherit;
+    display: block;
+  }
+
+  &__progress {
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0px 5px 19px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    height: 13px;
+    width: calc(100% - 10px);
+
+    @media (min-width: 520px) {
+      width: calc(100% - 25px);
+    }
+  }
+  &__level {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: #555d6d;
+    font: 500 14px/140% Montserrat;
+    letter-spacing: -0.02em;
+    top: -26px;
+  }
+}
