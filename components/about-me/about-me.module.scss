@@ -1,0 +1,42 @@
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 80px;
+  @media (min-width: 768px) {
+    margin-top: 143px;
+  }
+  &__text-container {
+    flex-basis: 100%;
+    @media (min-width: 800px) {
+      flex-basis: 46.3%;
+    }
+  }
+  &__myself {
+    margin-top: 16px;
+    font: 400 14px/140% Montserrat;
+    color: #486f8e;
+    &--course {
+      margin-top: 14px;
+    }
+  }
+
+  &__course {
+    margin-top: 16px;
+    font: 500 14px Montserrat;
+    color: #486f8e;
+  }
+  &__date {
+    margin-top: 7px;
+    font: 400 13px Montserrat;
+    color: #6a92b4;
+  }
+
+  &__img {
+    margin: 24px 0 24px 0 !important;
+    height: 250px !important;
+    @media (min-width: 800px) {
+      margin: 0 0 65px 0 !important;
+    }
+  }
+}
