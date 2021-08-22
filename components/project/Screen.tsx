@@ -6,7 +6,7 @@ type Props = {
   description: string;
 };
 
-const Screen = ({ title, description }: Props) => {
+export const Screen = ({ title, description }: Props) => {
   return (
     <li className={styles.screen}>
       <h3 className={styles.screens__title}>{title}</h3>
@@ -20,5 +20,3 @@ const Screen = ({ title, description }: Props) => {
     </li>
   );
 };
-
-export default Screen;

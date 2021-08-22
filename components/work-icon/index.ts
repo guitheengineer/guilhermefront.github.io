@@ -1,1 +1,1 @@
-export { default as WorkIcon } from './WorkIcon';
+export * from './WorkIcon';

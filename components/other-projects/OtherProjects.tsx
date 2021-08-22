@@ -1,7 +1,7 @@
 import styles from './other-projects.module.scss';
-import { ProjectList } from 'components/projects-group/ProjectsGroup';
+import { ProjectList } from 'components/pages/home/projects-group/ProjectsGroup';
 
-const OtherProjects = () => {
+export const OtherProjects = () => {
   return (
     <div className={styles['other-projects']}>
       <h2 className={styles['content__title']}>Other projects</h2>
@@ -9,5 +9,3 @@ const OtherProjects = () => {
     </div>
   );
 };
-
-export default OtherProjects;

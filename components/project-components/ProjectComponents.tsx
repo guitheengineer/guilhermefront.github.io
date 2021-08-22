@@ -1,7 +1,6 @@
 import { Role, Stack, Screens, SeeMoreTypes } from 'types';
-import { SeeMore, Icon } from 'components';
+import { SeeMore, Icon, Screen } from 'components';
 import styles from 'components/project/project.module.scss';
-import Screen from 'components/project/Screen';
 
 export const ProjectIcons = ({ stack }: { stack: Stack }) => (
   <div className={styles.project__icons}>

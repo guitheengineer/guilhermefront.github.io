@@ -1,7 +1,7 @@
 import { SeeMoreTypes } from 'types';
 import styles from './see-more.module.scss';
 
-const SeeMore = ({ seeMore, setSeeMore }: SeeMoreTypes) => (
+export const SeeMore = ({ seeMore, setSeeMore }: SeeMoreTypes) => (
   <button
     className={styles['see-more']}
     onClick={() => setSeeMore((prevState) => !prevState)}
@@ -26,5 +26,3 @@ const SeeMore = ({ seeMore, setSeeMore }: SeeMoreTypes) => (
     </svg>
   </button>
 );
-
-export default SeeMore;

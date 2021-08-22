@@ -7,7 +7,7 @@ type Props = Pick<IconProps, 'title'> & {
   percentage: number;
 };
 
-const Skill = ({ title, percentage }: Props) => (
+export const Skill = ({ title, percentage }: Props) => (
   <div className={styles.skill}>
     <Icon imgSize={20} type="skill" title={title} />
     <div className={styles.skill__progress}>
@@ -27,5 +27,3 @@ const Skill = ({ title, percentage }: Props) => (
     </div>
   </div>
 );
-
-export default Skill;

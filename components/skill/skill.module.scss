@@ -1,9 +1,9 @@
 .skill {
   display: flex;
   margin-top: 37px;
-
   align-items: center;
   position: relative;
+
   &__value {
     background: #10daff;
     border-radius: 5px;
@@ -13,8 +13,8 @@
 
   &__progress {
     position: relative;
-    background: #ffffff;
-    box-shadow: 0px 5px 19px rgba(0, 0, 0, 0.08);
+    background: #fff;
+    box-shadow: 0 5px 19px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
     height: 13px;
     width: calc(100% - 10px);
@@ -23,6 +23,7 @@
       width: calc(100% - 25px);
     }
   }
+
   &__level {
     position: absolute;
     left: 50%;

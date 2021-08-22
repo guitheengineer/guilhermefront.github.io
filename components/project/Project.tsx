@@ -1,10 +1,16 @@
 import { useEffect, useState, useCallback } from 'react';
 import styles from './project.module.scss';
-import { OtherProjects, ContactArea, Footer, Nav } from 'components';
+import {
+  OtherProjects,
+  ContactArea,
+  Footer,
+  Nav,
+  Quizby,
+  BetterAim,
+} from 'components';
 import { useMediaQuery } from 'react-responsive';
-import Projects from 'projects';
+import { Projects } from 'projects';
 import { ProjectContent } from 'types';
-import { Quizby, BetterAim } from './project-components';
 import { useRouter } from 'next/dist/client/router';
 
 const components = {
@@ -14,7 +20,7 @@ const components = {
 
 type Projects = { project: 'betteraim' };
 
-const Project = () => {
+export const Project = () => {
   const {
     query: { project },
   } = useRouter();
@@ -29,9 +35,9 @@ const Project = () => {
   const ProjectContent = components[project];
 
   // grab data about the project by its title
-  const projectData = (Object.values(Projects).find((value) =>
+  const projectData = Object.values(Projects).find((value) =>
     value.title === project ? value : null
-  ) as unknown) as ProjectContent;
+  ) as unknown as ProjectContent;
 
   return (
     <div className={styles.project}>
@@ -49,5 +55,3 @@ const Project = () => {
     </div>
   );
 };
-
-export default Project;

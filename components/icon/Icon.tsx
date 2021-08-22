@@ -10,7 +10,7 @@ export type IconProps = {
   imgSize?: number;
 };
 
-const Icon = ({
+export const Icon = ({
   title,
   className,
   size = 45,
@@ -40,5 +40,3 @@ const Icon = ({
     </div>
   );
 };
-
-export default Icon;

@@ -1,0 +1,37 @@
+.strong {
+  animation: presentation-color 2s forwards;
+
+  @keyframes presentation-color {
+    from {
+      color: black;
+    }
+
+    to {
+      color: #40aaff;
+    }
+  }
+}
+
+.profile {
+  max-width: 258px;
+  min-width: 230px;
+  box-shadow: 0 50px 30px rgba(0, 59, 108, 0.06);
+}
+
+.wrapper {
+  mix-blend-mode: normal;
+  filter: drop-shadow(0 10px 20px rgba(0, 59, 108, 0.13));
+
+  & > div {
+    border-radius: 50%;
+  }
+}
+
+.job {
+  box-shadow: 0 5px 20px rgba(250, 118, 96, 0.2);
+}
+
+.icons {
+  width: 235px;
+  height: 235px;
+}

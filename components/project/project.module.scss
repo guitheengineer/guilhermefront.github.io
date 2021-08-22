@@ -4,6 +4,7 @@
   letter-spacing: -0.02em;
   color: #40aaff;
 }
+
 .project {
   padding: 34px 7.2%;
 
@@ -16,11 +17,13 @@
     justify-content: space-between;
     margin-top: 64px;
   }
+
   &__title-screens {
     font: 500 26px Montserrat;
     color: #2a343c;
     margin-top: 80px;
   }
+
   &__screens {
     display: flex;
     justify-content: space-between;
@@ -28,17 +31,22 @@
     position: relative;
     padding-bottom: 50px;
   }
+
   &__content {
     flex-basis: 67%;
+
     @media (max-width: 867px) {
       flex-basis: 100%;
       max-width: 100%;
     }
   }
+
   &__role {
     @extend %bluefont;
+
     text-transform: capitalize;
   }
+
   &__title {
     margin-top: 7px;
     font: 600 30px Poppins;
@@ -46,6 +54,7 @@
     line-height: 140%;
     color: #25323d;
   }
+
   &__description {
     margin-top: 8px;
     line-height: 140%;
@@ -53,23 +62,27 @@
     font: 600 14px Montserrat;
     letter-spacing: -0.02em;
     color: #859fb4;
+
     @media (max-width: 768px) {
       margin-top: 20px;
     }
   }
+
   &__link {
     @extend %bluefont;
+
     display: block;
     margin-top: 12px;
+
     @media (max-width: 768px) {
       margin-top: 14px;
     }
   }
+
   &__icons {
     margin-top: 24px;
     display: grid;
     grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
-
     gap: 18px;
     width: fit-content;
 
@@ -79,47 +92,55 @@
       justify-content: space-between;
     }
   }
+
   &__icon {
     width: 34px;
-    box-shadow: 0px 22.9419px 13.7651px rgba(0, 59, 108, 0.06);
+    box-shadow: 0 22.9419px 13.7651px rgba(0, 59, 108, 0.06);
     height: 34px;
     background-color: white;
     border-radius: 6px;
+
     @media (max-width: 420px) {
       width: 30px;
       height: 30px;
     }
   }
+
   &__icon-img {
     width: 18px;
     height: 18px;
   }
+
   &__image {
     margin-left: 75px;
     width: 100%;
     max-width: 385px;
     height: 100%;
     display: block;
+
     @media (max-width: 768px) {
       max-width: none;
       margin: 12px 0 0;
       height: auto;
     }
   }
+
   &__seemore {
     display: flex;
     position: absolute;
     right: 10px;
     cursor: pointer;
-    bottom: 0px;
+    bottom: 0;
     color: #6492a4;
     align-items: center;
     margin-top: 6px;
   }
+
   &__seemore-title {
     font-size: 14px;
     font-weight: 500;
   }
+
   &__seemore-icon {
     margin-left: 5px;
   }
