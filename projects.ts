@@ -1,6 +1,6 @@
-import { ProjectsList } from './types/types';
+import { ProjectsList } from 'types';
 
-const Projects: ProjectsList = [
+export const Projects: ProjectsList = [
   {
     title: 'quizby',
     company: 'personal project',
@@ -178,5 +178,3 @@ const Projects: ProjectsList = [
       'Quality work requires best practices. As an example, selecting data from the state with Redux started to get a mess until I read and applied this awesome style guide from the docs. It helped me a lot to improve the code readability. Avoiding code duplication does not always mean that the benefit will outweigh the cost to implement the abstraction, but, when you analyze that the gains are better than the cost, definitely is a good way to improve code quality.',
   },
 ];
-
-export default Projects;
