@@ -13,7 +13,7 @@ export const PersonalIcon = ({ title, size = 19 }: Props) => (
     title="personal icon link"
     href={
       title === 'github'
-        ? 'https://github.com/gsdeveloper'
+        ? 'https://github.com/guilhermefront'
         : 'https://www.linkedin.com/in/guilherme-samuel-2aa7aa19b/'
     }
     className={classNames('cursor-pointer', { 'mr-6': title === 'github' })}

@@ -18,7 +18,7 @@ export const Footer = () => (
       <p
         className={`${styles.footer__paragraph} ${styles['footer__paragraph--contact']}`}
       >
-        gsdevelopercontact@gmail.com
+        guilhermesnd14@gmail.com
       </p>
     </div>
   </div>
