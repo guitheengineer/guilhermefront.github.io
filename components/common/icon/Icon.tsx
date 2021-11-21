@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 export type IconProps = {
   title: Tech;
-  type: 'work-icon' | 'profile' | 'skill';
+  type: 'work' | 'profile' | 'skill';
   className?: string;
   size?: number;
   imgSize?: number;
@@ -31,8 +31,8 @@ export const Icon = ({
       }
       className={classNames(
         styles.icon,
-        styles[`icon__${type}`],
-        styles[`icon__${type}--${title}`]
+        styles[type],
+        styles[`${type}${title}`]
       )}
     >
       <Image

@@ -6,113 +6,125 @@
   background-color: #e3eef7;
   transition: all 0.3s;
   cursor: pointer;
+}
 
-  &__skill {
-    box-shadow: 2px 4px 8px rgba(0, 59, 108, 0.08);
-    border-radius: 5px;
-    background: #fff;
-    margin-right: 17px;
-    width: 40px;
-    height: 35px;
+.skill {
+  box-shadow: 2px 4px 8px rgba(0, 59, 108, 0.08);
+  border-radius: 5px;
+  background: #fff;
+  margin-right: 17px;
+  width: 40px;
+  height: 35px;
 
-    @media (min-width: 520px) {
-      width: 50px;
-      height: 45px;
-    }
-
-    @media (min-width: 400px) {
-      margin-right: 25px;
-    }
-  }
-
-  &__work-icon {
-    box-shadow: 0 22.9419px 13.7651px rgba(0, 59, 108, 0.06);
-    border-radius: 6px;
-    background-color: #fff;
-    width: 28px;
-    height: 28px;
-
-    &--react {
-      width: 10px;
-      height: 14px;
-    }
-
-    &--figma {
-      width: 10px;
-      height: 14px;
-    }
-
-    &--node {
-      width: 16px;
-    }
-
-    &--typescript {
-      width: 13px;
-      height: 13px;
-    }
-
-    &--styled-components {
-      width: 30px;
-      height: 30px;
-    }
-  }
-
-  &__profile {
+  @media (min-width: 520px) {
     width: 50px;
-    height: 50px;
-    position: absolute;
-
-    &--react {
-      left: -24px;
-      top: -17px;
-    }
-
-    &--redux {
-      left: -49px;
-      top: 85px;
-      background: #f4eefb;
-    }
-
-    &--typescript {
-      top: 190px;
-      left: -27px;
-    }
-
-    &--javascript {
-      left: 49px;
-      top: 240px;
-      background: #eefbee;
-    }
-
-    &--sass {
-      left: 212px;
-      top: 187px;
-    }
-
-    &--styled-components {
-      left: 220px;
-      top: 88px;
-      background: #fbeef5;
-    }
-
-    &--storybook {
-      left: 208px;
-      top: -15px;
-      background: #e3fce3;
-    }
-
-    &--nextjs {
-      left: 90px;
-      top: -42px;
-    }
-
-    &--bootstrap {
-      left: 132px;
-      top: 240px;
-    }
+    height: 45px;
   }
 
+  @media (min-width: 400px) {
+    margin-right: 25px;
+  }
+}
+
+.work {
+  box-shadow: 0 22.9419px 13.7651px rgba(0, 59, 108, 0.06);
+  border-radius: 6px;
+  background-color: #fff;
+  width: 28px;
+  height: 28px;
+}
+
+.workreact {
+  composes: work;
+  width: 10px;
+  height: 14px;
+}
+
+.workfigma {
+  composes: work;
+  width: 10px;
+  height: 14px;
+}
+
+.worknode {
+  composes: work;
+  width: 16px;
+}
+
+.worktypescript {
+  composes: work;
+  width: 13px;
+  height: 13px;
+}
+
+.workstyled-components {
+  composes: work;
+  width: 30px;
+  height: 30px;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  position: absolute;
   &:hover {
     transform: scale(1.08);
   }
+}
+.profilereact {
+  composes: profile;
+  left: -24px;
+  top: -17px;
+}
+
+.profileredux {
+  composes: profile;
+  left: -49px;
+  top: 85px;
+  background: #f4eefb;
+}
+
+.profiletypescript {
+  composes: profile;
+  top: 190px;
+  left: -27px;
+}
+
+.profilejavascript {
+  composes: profile;
+  left: 49px;
+  top: 240px;
+  background: #e3eef7;
+}
+
+.profilesass {
+  composes: profile;
+  left: 212px;
+  top: 187px;
+}
+
+.profilestyled-components {
+  composes: profile;
+  left: 220px;
+  top: 88px;
+  background: #fbeef5;
+}
+
+.profilestorybook {
+  composes: profile;
+  left: 208px;
+  top: -15px;
+  background: #e3fce3;
+}
+
+.profilenextjs {
+  composes: profile;
+  left: 90px;
+  top: -42px;
+}
+
+.profilebootstrap {
+  composes: profile;
+  left: 132px;
+  top: 240px;
 }

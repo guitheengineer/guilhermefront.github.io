@@ -24,7 +24,7 @@ export const Presentation = () => (
 
     <aside
       className={classNames(
-        'hidden md:flex mr-16 bg-white flex-col justify-center h-56 rounded-xl',
+        'hidden md:flex mr-16 bg-white flex-col justify-center h-56 rounded-xl -top-2 relative',
         styles.profile
       )}
     >

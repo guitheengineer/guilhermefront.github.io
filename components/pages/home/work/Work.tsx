@@ -1,7 +1,6 @@
 import { Projects, Companies, Stack } from 'types';
 import { WorkImage } from './WorkImage';
 import { Icon } from 'components';
-import { Tech } from 'types';
 import Link from 'next/link';
 import styles from './work.module.scss';
 
@@ -13,13 +12,9 @@ type Props = {
   stack: Stack;
 };
 
-const WorkIcon = ({ title }: { title: Tech }) => (
-  <Icon type="work-icon" title={title} imgSize={15} size={28} />
-);
-
 export const Work = ({ title, company, role, image, stack }: Props) => {
   return (
-    <Link href={`/projects/${title.toLowerCase()}`}>
+    <Link prefetch={false} href={`/projects/${title.toLowerCase()}`}>
       <a type="button" className={styles.work}>
         <div className={styles.work__info}>
           <h4 className={styles.work__company}>{company}</h4>
@@ -31,7 +26,13 @@ export const Work = ({ title, company, role, image, stack }: Props) => {
           </p>
           <ul className={styles.work__stack}>
             {stack.map((tech) => (
-              <WorkIcon key={tech} title={tech} />
+              <Icon
+                type="work"
+                title={tech}
+                key={tech}
+                imgSize={15}
+                size={28}
+              />
             ))}
           </ul>
         </div>

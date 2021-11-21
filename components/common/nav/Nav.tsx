@@ -29,7 +29,7 @@ export const PersonalIcon = ({ title, size = 19 }: Props) => (
 
 export const Nav = () => (
   <nav className="flex justify-between container items-center mt-8">
-    <Link href="/">
+    <Link prefetch={false} href="/">
       <a className="text-sm font-poppins tracking-tighter text-suave-medium font-medium">
         Guilherme Samuel
       </a>

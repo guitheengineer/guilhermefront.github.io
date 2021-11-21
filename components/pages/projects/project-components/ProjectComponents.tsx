@@ -7,7 +7,7 @@ export const ProjectIcons = ({ stack }: { stack: Stack }) => (
   <div className={styles.icons}>
     {stack.map((tech) => (
       <Icon
-        type="work-icon"
+        type="work"
         key={tech}
         title={tech}
         className={styles.icon}
