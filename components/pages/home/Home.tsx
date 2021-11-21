@@ -1,6 +1,5 @@
 import * as Page from '.';
 import Head from 'next/head';
-import { Nav, Footer } from 'components';
 
 export const Home = () => (
   <div data-testid="Home">
@@ -14,7 +13,10 @@ export const Home = () => (
       <meta property="og:description" content="My projects and info about me" />
       <meta property="og:image" content="https://i.ibb.co/XJ0sS8r/image.png" />
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://guilhermefront.github.io/" />
+      <meta
+        property="twitter:url"
+        content="https://guilhermefront.github.io/"
+      />
       <meta property="twitter:title" content="Portfólio - Guilherme Samuel" />
       <meta
         property="twitter:description"

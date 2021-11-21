@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import styles from './project.module.scss';
 import { OtherProjects, ContactArea, Footer, Nav } from 'components';
 import { useMediaQuery } from 'react-responsive';
@@ -15,27 +15,27 @@ const ProjectContent = () => {
 };
 
 export const Project = ({ project }: ProjectProps) => {
-  const [seeMore, setSeeMore] = useState(false);
+  // const [seeMore, setSeeMore] = useState(false);
 
-  const is768 = useMediaQuery({ maxWidth: 768 });
+  // const is768 = useMediaQuery({ maxWidth: 768 });
 
-  const setMore = useCallback(() => {
-    setSeeMore((prevState) => !prevState);
-  }, []);
+  // const setMore = useCallback(() => {
+  //   setSeeMore((prevState) => !prevState);
+  // }, []);
 
-  const projectData = () => {
-    return Projects.find((project) => project.title === 'quizby');
-  };
+  // const projectData = () => {
+  //   return Projects.find((project) => project.title === 'quizby');
+  // };
 
   return (
-    <div className={styles.project}>
-      <ProjectContent
+    <div>
+      {/* <ProjectContent
         seeMore={seeMore}
         setSeeMore={setMore}
         is768={is768}
         img={`assets/work-demos/${project}.png`}
         projectData={projectData}
-      />
+      /> */}
       <ContactArea />
       <OtherProjects />
     </div>

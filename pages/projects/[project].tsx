@@ -13,8 +13,8 @@ export const getStaticPaths: GetStaticPaths = () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = ({ params: { project } }) => {
-  return { props: { project } };
+export const getStaticProps: GetStaticProps = ({ params }) => {
+  return { props: { project: params?.project } };
 };
 
 export default Project;
