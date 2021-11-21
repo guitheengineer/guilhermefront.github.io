@@ -1,14 +1,16 @@
 import { Role, Stack, Screens, SeeMoreTypes } from 'types';
-import { SeeMore, Icon, Screen } from 'components';
-import styles from 'components/project/project.module.scss';
+import { SeeMore, Icon } from 'components';
+import styles from './project-components.module.scss';
+import { Screen } from './screen';
 
 export const ProjectIcons = ({ stack }: { stack: Stack }) => (
-  <div className={styles.project__icons}>
+  <div className={styles.icons}>
     {stack.map((tech) => (
       <Icon
+        type="work-icon"
         key={tech}
         title={tech}
-        className={styles.project__icon}
+        className={styles.icon}
         imgSize={19}
       />
     ))}
@@ -16,13 +18,13 @@ export const ProjectIcons = ({ stack }: { stack: Stack }) => (
 );
 
 export const ProjectRole = ({ role }: { role: Role }) => (
-  <h4 className={styles.project__role}>
+  <h4 className={styles.role}>
     {Array.isArray(role) ? role.reduce((acc, v) => acc + ', ' + v) : role}
   </h4>
 );
 
 export const ProjectSite = ({ site }: { site: string }) => (
-  <a href={site} className={styles.project__link}>
+  <a href={site} className={styles.link}>
     {site}
   </a>
 );
@@ -38,7 +40,7 @@ export const ProjectScreens = ({
 }) => (
   <>
     <h2 className={styles['project__screen-title']}>Screens</h2>
-    <ul data-testid="screens" className={styles.project__screens}>
+    <ul data-testid="screens" className={styles.screens}>
       {screens
         ?.slice(0, quantity && seeMore ? quantity : screens.length)
         .map((screen) => (
@@ -46,7 +48,7 @@ export const ProjectScreens = ({
         ))}
     </ul>
     <SeeMore
-      className={styles.project__seemore}
+      className={styles.seemore}
       setSeeMore={setSeeMore}
       seeMore={seeMore}
     />

@@ -26,9 +26,10 @@ export const AboutMe = () => {
           solved in those games are also present in the programming area, which
           is where I found myself able to build useful tools for people. So,
           since I entered college at seventeen, I decided to dedicate all my
-          efforts in this area. Currently I’m working intensively with React. In
-          my free time I love studying UX/UI concepts to reach a better visual
-          design and user experience of the projects i&apos;m involved.
+          efforts in this area. Currently I’m working intensively with React and
+          NextJS on a large scale project. In my free time I love studying UX/UI
+          concepts to reach a better visual design and user experience of the
+          projects i&apos;m involved.
         </p>
         <Heading marginTop={38}>Education</Heading>
         <h6 className={styles['about-me__course']}>
@@ -41,9 +42,8 @@ export const AboutMe = () => {
           className={`${styles['about-me__myself']} ${styles['about-me__myself--course']}`}
         >
           In addition to the traditional learning and college subjects, we
-          simulate the creation of startups and work on the development of the
-          invented product from planning to the development and it's lauching
-          using Front and and Back end technologies.
+          simulated the creation of startups and worked on the development of
+          products using both Front and Back End stacks.
         </p>
         <a
           href="https://pdfhost.io/0ad5c657-36ac-4752-a8a2-91d1a646a2cb"

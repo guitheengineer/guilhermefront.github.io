@@ -75,35 +75,40 @@
 
     &--typescript {
       top: 190px;
-      left: -23px;
+      left: -27px;
     }
 
-    &--mongo {
-      left: 90px;
-      top: 224px;
+    &--javascript {
+      left: 49px;
+      top: 240px;
       background: #eefbee;
     }
 
-    &--html {
-      left: 206px;
-      top: 193px;
+    &--sass {
+      left: 212px;
+      top: 187px;
     }
 
-    &--sass {
+    &--styled-components {
       left: 220px;
       top: 88px;
       background: #fbeef5;
     }
 
-    &--node {
+    &--storybook {
       left: 208px;
       top: -15px;
       background: #e3fce3;
     }
 
-    &--css {
+    &--nextjs {
       left: 90px;
       top: -42px;
+    }
+
+    &--bootstrap {
+      left: 132px;
+      top: 240px;
     }
   }
 

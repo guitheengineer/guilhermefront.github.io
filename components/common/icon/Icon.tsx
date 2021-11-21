@@ -1,6 +1,7 @@
 import styles from './icon.module.scss';
 import { Tech } from 'types';
 import Image from 'next/image';
+import classNames from 'classnames';
 
 export type IconProps = {
   title: Tech;
@@ -19,6 +20,7 @@ export const Icon = ({
 }: IconProps) => {
   return (
     <div
+      title={title}
       style={
         !className
           ? {
@@ -27,9 +29,11 @@ export const Icon = ({
             }
           : undefined
       }
-      className={`${styles.icon} ${styles[`icon__${type}`]} ${
+      className={classNames(
+        styles.icon,
+        styles[`icon__${type}`],
         styles[`icon__${type}--${title}`]
-      }`}
+      )}
     >
       <Image
         alt={title}

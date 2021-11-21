@@ -1,8 +1,8 @@
 import { Projects, Companies, Stack } from 'types';
 import { WorkImage } from './WorkImage';
-import { WorkIcon } from 'components';
+import { Icon } from 'components';
+import { Tech } from 'types';
 import Link from 'next/link';
-import { useRouter } from 'next/dist/client/router';
 import styles from './work.module.scss';
 
 type Props = {
@@ -13,13 +13,13 @@ type Props = {
   stack: Stack;
 };
 
+const WorkIcon = ({ title }: { title: Tech }) => (
+  <Icon type="work-icon" title={title} imgSize={15} size={28} />
+);
+
 export const Work = ({ title, company, role, image, stack }: Props) => {
-  const {
-    query: { project },
-  } = useRouter();
-  // console.log(project);
-  return project !== title.toLowerCase() ? (
-    <Link passHref href={`/projects/${project}`}>
+  return (
+    <Link href={`/projects/${title.toLowerCase()}`}>
       <a type="button" className={styles.work}>
         <div className={styles.work__info}>
           <h4 className={styles.work__company}>{company}</h4>
@@ -30,13 +30,13 @@ export const Work = ({ title, company, role, image, stack }: Props) => {
               : role}
           </p>
           <ul className={styles.work__stack}>
-            {stack.map((tech, i) => (
-              <WorkIcon key={i} title={tech} />
+            {stack.map((tech) => (
+              <WorkIcon key={tech} title={tech} />
             ))}
           </ul>
         </div>
         <WorkImage image={image} />
       </a>
     </Link>
-  ) : null;
+  );
 };

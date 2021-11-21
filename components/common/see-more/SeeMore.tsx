@@ -1,14 +1,19 @@
+import classNames from 'classnames';
 import { SeeMoreTypes } from 'types';
 import styles from './see-more.module.scss';
 
-export const SeeMore = ({ seeMore, setSeeMore }: SeeMoreTypes) => (
+export const SeeMore = ({ seeMore, setSeeMore, className }: SeeMoreTypes) => (
   <button
-    className={styles['see-more']}
+    className={classNames(
+      'flex ml-auto cursor-pointer mt-3 items-center text-green-900',
+      className
+    )}
+    type="button"
     onClick={() => setSeeMore((prevState) => !prevState)}
   >
-    <span className={styles['see-more__title']}>See more</span>
+    <span className="text-sm">See more</span>
     <svg
-      className={styles['see-more__icon']}
+      className={styles.icon}
       width="13"
       height="8"
       style={{ transform: seeMore ? `rotate(180deg)` : `rotate(0deg)` }}

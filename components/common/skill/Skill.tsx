@@ -1,6 +1,5 @@
 import styles from './skill.module.scss';
-import { Icon } from 'components/icon';
-import { IconProps } from 'components/icon/Icon';
+import { Icon, IconProps } from '../icon';
 
 type Props = Pick<IconProps, 'title'> & {
   title: string;
@@ -8,7 +7,7 @@ type Props = Pick<IconProps, 'title'> & {
 };
 
 export const Skill = ({ title, percentage }: Props) => (
-  <div className={styles.skill}>
+  <div title={title} className={styles.skill}>
     <Icon imgSize={20} type="skill" title={title} />
     <div className={styles.skill__progress}>
       <span

@@ -17,7 +17,7 @@ export const Presentation = () => (
         As a React developer, I have been writing code that is trustable, clean
         and easy to maintain.
       </p>
-      <a href="mailto:guilhermesnd14@@gmail.com">
+      <a href="mailto:guilhermesnd14@gmail.com">
         <BlueButton type="presentation">Contact</BlueButton>
       </a>
     </section>
@@ -55,11 +55,12 @@ export const Presentation = () => (
         <Icon type="profile" imgSize={24} title="react" />
         <Icon type="profile" title="redux" />
         <Icon type="profile" imgSize={22} title="typescript" />
-        <Icon type="profile" imgSize={27} title="mongo" />
-        <Icon type="profile" imgSize={22} title="html" />
+        <Icon type="profile" imgSize={24} title="javascript" />
+        <Icon type="profile" imgSize={20} title="bootstrap" />
+        <Icon type="profile" imgSize={27} title="nextjs" />
         <Icon type="profile" imgSize={26} title="sass" />
-        <Icon type="profile" title="node" />
-        <Icon type="profile" imgSize={22} title="css" />
+        <Icon type="profile" title="styled-components" />
+        <Icon type="profile" imgSize={22} title="storybook" />
       </ul>
     </aside>
   </div>

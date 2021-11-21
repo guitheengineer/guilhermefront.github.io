@@ -1,29 +1,20 @@
 import { useEffect, useState, useCallback } from 'react';
 import styles from './project.module.scss';
-import {
-  OtherProjects,
-  ContactArea,
-  Footer,
-  Nav,
-  Quizby,
-  BetterAim,
-} from 'components';
+import { OtherProjects, ContactArea, Footer, Nav } from 'components';
 import { useMediaQuery } from 'react-responsive';
 import { Projects } from 'projects';
-import { ProjectContent } from 'types';
-import { useRouter } from 'next/dist/client/router';
+import { Projects as ProjectsType } from 'types';
+import { ProjectIcons } from '../project-components';
 
-const components = {
-  quizby: Quizby,
-  betteraim: BetterAim,
+type ProjectProps = {
+  project: ProjectsType;
 };
 
-type Projects = { project: 'betteraim' };
+const ProjectContent = () => {
+  return <ProjectIcons stack={['bootstrap']} />;
+};
 
-export const Project = () => {
-  const {
-    query: { project },
-  } = useRouter();
+export const Project = ({ project }: ProjectProps) => {
   const [seeMore, setSeeMore] = useState(false);
 
   const is768 = useMediaQuery({ maxWidth: 768 });
@@ -32,16 +23,12 @@ export const Project = () => {
     setSeeMore((prevState) => !prevState);
   }, []);
 
-  const ProjectContent = components[project];
-
-  // grab data about the project by its title
-  const projectData = Object.values(Projects).find((value) =>
-    value.title === project ? value : null
-  ) as unknown as ProjectContent;
+  const projectData = () => {
+    return Projects.find((project) => project.title === 'quizby');
+  };
 
   return (
     <div className={styles.project}>
-      <Nav />
       <ProjectContent
         seeMore={seeMore}
         setSeeMore={setMore}
@@ -51,7 +38,6 @@ export const Project = () => {
       />
       <ContactArea />
       <OtherProjects />
-      <Footer />
     </div>
   );
 };

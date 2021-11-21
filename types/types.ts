@@ -1,3 +1,5 @@
+import { SetStateAction } from 'react';
+
 export type Projects =
   | 'quizby'
   | 'betteraim'
@@ -12,7 +14,8 @@ export type Companies = 'personal project' | 'micg pinturas';
 
 export type SeeMoreTypes = {
   seeMore: boolean;
-  setSeeMore: (value: React.SetStateAction<boolean>) => void;
+  setSeeMore: (value: SetStateAction<boolean>) => void;
+  className?: string;
 };
 
 export type Tech =
@@ -25,7 +28,12 @@ export type Tech =
   | 'html'
   | 'css'
   | 'figma'
-  | 'typescript';
+  | 'typescript'
+  | 'nextjs'
+  | 'javascript'
+  | 'storybook'
+  | 'bootstrap'
+  | 'formik';
 
 export type Stack = Tech[];
 
