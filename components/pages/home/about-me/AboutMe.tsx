@@ -5,11 +5,10 @@ import Image from 'next/image';
 
 const GameBoy = ({ is800 = false }: { is800?: boolean }) => (
   <Image
-    className={styles['about-me__img']}
     width={is800 ? 180 : 372}
     height={is800 ? 300 : 515}
-    alt="gameboy illustration"
-    src={'/assets/gameboy.svg'}
+    alt=""
+    src="/assets/gameboy.svg"
   />
 );
 
@@ -17,11 +16,11 @@ export const AboutMe = () => {
   const is800 = useMediaQuery({ maxWidth: 800 });
 
   return (
-    <div className={styles['about-me']}>
-      <div className={styles['about-me__text-container']}>
+    <div className="flex justify-between align-start mt-20 lg:mt-36">
+      <div className="mr-24">
         <Heading>About me</Heading>
         {is800 ? <GameBoy is800 /> : null}
-        <p className={styles['about-me__myself']}>
+        <p className="mt-4 text-sm font-montserrat text-suave-clear">
           Playing games since I was a kid, I saw that the challenges I usually
           solved in those games are also present in the programming area, which
           is where I found myself able to build useful tools for people. So,
@@ -31,16 +30,14 @@ export const AboutMe = () => {
           concepts to reach a better visual design and user experience of the
           projects i&apos;m involved.
         </p>
-        <Heading marginTop={38}>Education</Heading>
-        <h6 className={styles['about-me__course']}>
+        <Heading className="mt-9">Education</Heading>
+        <h6 className="text-suave-clear font-medium text-sm mt-4 font-montserrat">
           Analysis and Systems Development, FECAF
         </h6>
-        <p className={styles['about-me__date']}>
+        <p className="font-medium text-xs mt-2 text-suave-opaque font-montserrat">
           FEB 2019 - MAY 2021 / São Paulo
         </p>
-        <p
-          className={`${styles['about-me__myself']} ${styles['about-me__myself--course']}`}
-        >
+        <p className="mt-3 text-sm font-montserrat text-suave-clear">
           In addition to the traditional learning and college subjects, we
           simulated the creation of startups and worked on the development of
           products using both Front and Back End stacks.
@@ -52,7 +49,11 @@ export const AboutMe = () => {
           <BlueButton type="about-me">Download resume</BlueButton>
         </a>
       </div>
-      {!is800 ? <GameBoy /> : null}
+      {!is800 ? (
+        <div className="flex-shrink-0">
+          <GameBoy />
+        </div>
+      ) : null}
     </div>
   );
 };

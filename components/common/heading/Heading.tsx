@@ -4,12 +4,9 @@ import styles from './heading.module.scss';
 
 type Props = {
   children: ReactNode;
-  marginTop?: number;
   className?: string;
 };
 
-export const Heading = ({ children, marginTop, className }: Props) => (
-  <h6 style={{ marginTop }} className={classNames(styles.heading, className)}>
-    {children}
-  </h6>
+export const Heading = ({ children, className }: Props) => (
+  <h6 className={classNames(styles.heading, className)}>{children}</h6>
 );

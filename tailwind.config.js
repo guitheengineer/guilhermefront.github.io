@@ -23,6 +23,8 @@ module.exports = {
           lighter: '#859fb4',
           light: '#62839d',
           medium: 'hsla(207, 14%, 37%, 1)',
+          clear: '#486f8e',
+          opaque: '#6a92b4',
         },
       },
       fontSize: {
