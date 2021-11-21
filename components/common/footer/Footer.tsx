@@ -1,23 +1,19 @@
+import classNames from 'classnames';
 import styles from './footer.module.scss';
+// background: #e7eff4;
 
 export const Footer = () => (
-  <div className={styles.footer}>
-    <div className={styles.footer__content}>
-      <p
-        className={`${styles.footer__paragraph} ${styles['footer__paragraph--feedback']}`}
-      >
+  <div className={classNames('w-full left-0 absolute h-28', styles.footer)}>
+    <div className="container h-full flex items-center justify-center md:justify-between">
+      <p className="font-black text-xs font-montserrat text-blue-700 hidden md:block">
         Your feedback is appreciated!
       </p>
-      <p
-        className={`${styles.footer__paragraph} ${styles['footer__paragraph--me']}`}
-      >
+      <p className="font-black text-xs font-montserrat text-blue-700">
         Guilherme Samuel
         <br />
         Front-end developer
       </p>
-      <p
-        className={`${styles.footer__paragraph} ${styles['footer__paragraph--contact']}`}
-      >
+      <p className="font-black text-xs font-montserrat text-blue-700 hidden md:block">
         guilhermesnd14@gmail.com
       </p>
     </div>
