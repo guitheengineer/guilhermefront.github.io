@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import styles from './footer.module.scss';
-// background: #e7eff4;
 
 export const Footer = () => (
   <div className={classNames('w-full left-0 absolute h-28', styles.footer)}>
