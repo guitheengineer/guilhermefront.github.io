@@ -25,6 +25,8 @@ module.exports = {
           medium: 'hsla(207, 14%, 37%, 1)',
           clear: '#486f8e',
           opaque: '#6a92b4',
+          dark: '#2a343c',
+          blue: '#40aaff',
         },
       },
       fontSize: {

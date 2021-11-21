@@ -3,6 +3,7 @@ import { WorkImage } from './WorkImage';
 import { Icon } from 'components';
 import Link from 'next/link';
 import styles from './work.module.scss';
+import classNames from 'classnames';
 
 type Props = {
   title: Projects;
@@ -24,7 +25,12 @@ export const Work = ({ title, company, role, image, stack }: Props) => {
               ? role.reduce((acc, v) => acc + ', ' + v)
               : role}
           </p>
-          <ul className={styles.work__stack}>
+          <ul
+            className={classNames(
+              'mt-6 grid gap-4 grid-rows-3 grid-cols-3',
+              styles.stack
+            )}
+          >
             {stack.map((tech) => (
               <Icon
                 type="work"

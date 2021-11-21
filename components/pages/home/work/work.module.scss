@@ -52,21 +52,14 @@
     color: #859fb4;
     margin-top: 11px;
   }
+}
 
-  &__stack {
-    margin-top: 24px;
-    display: grid;
-    grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    gap: 15px;
-  }
+.image {
+  box-shadow: 0 4px 10px rgba(146, 171, 191, 0.11);
+}
 
-  &__image {
-    overflow: hidden;
-    position: relative;
-    margin-left: 13px;
-    box-shadow: 0 4px 10px rgba(146, 171, 191, 0.11);
-  }
+.stack {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
