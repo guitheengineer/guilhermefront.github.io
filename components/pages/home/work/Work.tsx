@@ -16,11 +16,19 @@ type Props = {
 export const Work = ({ title, company, role, image, stack }: Props) => {
   return (
     <Link prefetch={false} href={`/projects/${title.toLowerCase()}`}>
-      <a type="button" className={styles.work}>
-        <div className={styles.work__info}>
-          <h4 className={styles.work__company}>{company}</h4>
-          <h3 className={styles.work__title}>{title}</h3>
-          <p className={styles.work__roles}>
+      <a
+        type="button"
+        className={classNames(
+          'flex px-5 justify-between rounded-md cursor-pointer',
+          styles.work
+        )}
+      >
+        <div>
+          <h4 className="mt-5 font-medium text-xs font-poppins text-suave-blue capitalize">
+            {company}
+          </h4>
+          <h3 className="font-medium font-poppins mt-5 capitalize">{title}</h3>
+          <p className="text-sm capitalize mt-3 text-suave-lighter font-poppins">
             {Array.isArray(role)
               ? role.reduce((acc, v) => acc + ', ' + v)
               : role}

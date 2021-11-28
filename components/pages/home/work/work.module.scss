@@ -1,57 +1,19 @@
 .work {
-  display: flex;
-  cursor: pointer;
-  padding: 0 5% 0 5%;
-
-  @media (min-width: 420px) {
-    padding: 0 6%;
-  }
-
   background: #fff;
   box-shadow: 0 50px 30px rgba(0, 59, 108, 0.06);
-  border-radius: 6px;
-  height: 300px;
 
-  @media (min-width: 380px) {
-    height: 290px;
-  }
-
-  justify-content: space-between;
   transition: all 0.3s;
 
   &:hover {
     transition: all 0.3s;
     transform: scale(1.02);
   }
+}
 
-  &__info {
-    width: 54%;
-    max-width: 158px;
-    text-align: left;
-  }
-
-  &__company {
-    margin-top: 20px;
-    font: 500 12px Poppins;
-    letter-spacing: 0.02em;
-    color: #40aaff;
-    text-transform: capitalize;
-  }
-
-  &__title {
-    font: 500 16px Poppins;
-    margin-top: 20px;
-    text-transform: capitalize;
-  }
-
-  &__roles {
-    font: 14px/120% Poppins;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    font-weight: 400;
-    color: #859fb4;
-    margin-top: 11px;
-  }
+.info {
+  width: 54%;
+  max-width: 158px;
+  text-align: left;
 }
 
 .image {
