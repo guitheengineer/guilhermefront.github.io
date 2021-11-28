@@ -2,40 +2,34 @@ import { useState, useCallback } from 'react';
 import styles from './project.module.scss';
 import { OtherProjects, ContactArea, Footer, Nav } from 'components';
 import { useMediaQuery } from 'react-responsive';
-import { Projects } from 'projects';
-import { Projects as ProjectsType } from 'types';
-import { ProjectIcons } from '../project-components';
+import { ProjectContent as IProjectContent } from 'types';
+import { ProjectIcons, ProjectRole } from '../project-components';
 
 type ProjectProps = {
-  project: ProjectsType;
+  project: IProjectContent;
 };
 
 const ProjectContent = () => {
-  return <ProjectIcons stack={['bootstrap']} />;
+  return (
+    <>
+      <ProjectRole role="Fullstack developer" />
+      <ProjectIcons stack={['bootstrap']} />
+    </>
+  );
 };
 
 export const Project = ({ project }: ProjectProps) => {
-  // const [seeMore, setSeeMore] = useState(false);
+  const [seeMore, setSeeMore] = useState(false);
 
-  // const is768 = useMediaQuery({ maxWidth: 768 });
+  const is768 = useMediaQuery({ maxWidth: 768 });
 
-  // const setMore = useCallback(() => {
-  //   setSeeMore((prevState) => !prevState);
-  // }, []);
-
-  // const projectData = () => {
-  //   return Projects.find((project) => project.title === 'quizby');
-  // };
+  const setMore = useCallback(() => {
+    setSeeMore((prevState) => !prevState);
+  }, []);
 
   return (
     <div>
-      {/* <ProjectContent
-        seeMore={seeMore}
-        setSeeMore={setMore}
-        is768={is768}
-        img={`assets/work-demos/${project}.png`}
-        projectData={projectData}
-      /> */}
+      <ProjectContent img={`assets/work-demos/${project.title}.png`} />
       <ContactArea />
       <OtherProjects />
     </div>

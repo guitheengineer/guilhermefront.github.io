@@ -14,7 +14,10 @@ export const getStaticPaths: GetStaticPaths = () => {
 };
 
 export const getStaticProps: GetStaticProps = ({ params }) => {
-  return { props: { project: params?.project } };
+  const projectData = Projects.find(
+    (project) => project.title === params?.project
+  );
+  return { props: { project: projectData } };
 };
 
 export default Project;

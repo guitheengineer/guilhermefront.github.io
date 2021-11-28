@@ -7,7 +7,7 @@ export const Footer = () => (
       <p className="font-black text-xs font-montserrat text-suave-clear hidden md:block">
         Your feedback is appreciated!
       </p>
-      <p className="font-black text-xs font-montserrat text-suave-clear">
+      <p className="font-black text-center text-xs font-montserrat text-suave-clear">
         Guilherme Samuel
         <br />
         Front-end developer

@@ -4,22 +4,17 @@ import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
 
 const GameBoy = ({ is800 = false }: { is800?: boolean }) => (
-  <Image
-    width={is800 ? 180 : 372}
-    height={is800 ? 300 : 515}
-    alt=""
-    src="/assets/gameboy.svg"
-  />
+  <Image layout="fill" alt="" src="/assets/gameboy.svg" />
 );
 
 export const AboutMe = () => {
-  const is800 = useMediaQuery({ maxWidth: 800 });
-
   return (
     <div className="flex justify-between align-start mt-20 lg:mt-36">
-      <div className="mr-24">
+      <div className="lg:mr-24">
         <Heading>About me</Heading>
-        {is800 ? <GameBoy is800 /> : null}
+        <div className="lg:hidden relative mx-auto w-52 h-80 mt-3">
+          <GameBoy is800 />
+        </div>
         <p className="mt-4 text-sm font-montserrat text-suave-clear">
           Playing games since I was a kid, I saw that the challenges I usually
           solved in those games are also present in the programming area, which
@@ -49,11 +44,9 @@ export const AboutMe = () => {
           <BlueButton type="about-me">Download resume</BlueButton>
         </a>
       </div>
-      {!is800 ? (
-        <div className="flex-shrink-0">
-          <GameBoy />
-        </div>
-      ) : null}
+      <div className="hidden lg:block flex-shrink-0 w-5/12 -mt-32 h-auto relative">
+        <GameBoy />
+      </div>
     </div>
   );
 };
