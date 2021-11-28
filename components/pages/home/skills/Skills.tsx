@@ -1,12 +1,11 @@
 import { Heading, SeeMore, Skill } from 'components';
 import { useState } from 'react';
-import styles from './skills.module.scss';
 
 export const Skills = () => {
   const [seeMore, setSeeMore] = useState(false);
   return (
-    <article className={styles.skills}>
-      <Heading className={styles.skills__heading}>Skills</Heading>
+    <article className="mt-24 relative">
+      <Heading className="mt-9">Skills</Heading>
       <Skill title="react" percentage={73} />
       <Skill title="nextjs" percentage={76} />
       <Skill title="typescript" percentage={55} />
