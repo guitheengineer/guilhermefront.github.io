@@ -1,5 +1,5 @@
 export * from './pages/home/Home';
-export * from './common/blue-button';
+export * from './common/button';
 export * from './common/contact-area';
 export * from './common/content';
 export * from './common/footer';

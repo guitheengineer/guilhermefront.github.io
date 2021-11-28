@@ -1,5 +1,5 @@
 import styles from './about-me.module.scss';
-import { BlueButton, Heading } from 'components';
+import { Button, Heading } from 'components';
 import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
 
@@ -9,7 +9,7 @@ const GameBoy = ({ is800 = false }: { is800?: boolean }) => (
 
 export const AboutMe = () => {
   return (
-    <div className="flex justify-between align-start mt-20 lg:mt-36">
+    <div className="flex justify-between align-start mt-20 lg:mt-36 mb-16">
       <div className="lg:mr-24">
         <Heading>About me</Heading>
         <div className="lg:hidden relative mx-auto w-52 h-80 mt-3">
@@ -41,7 +41,7 @@ export const AboutMe = () => {
           href="https://pdfhost.io/0ad5c657-36ac-4752-a8a2-91d1a646a2cb"
           download
         >
-          <BlueButton type="about-me">Download resume</BlueButton>
+          <Button>Download resume</Button>
         </a>
       </div>
       <div className="hidden lg:block flex-shrink-0 w-5/12 -mt-32 h-auto relative">

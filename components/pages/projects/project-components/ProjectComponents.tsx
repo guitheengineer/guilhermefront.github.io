@@ -2,6 +2,7 @@ import { Role, Stack, Screens, SeeMoreTypes } from 'types';
 import { SeeMore, Icon } from 'components';
 import styles from './project-components.module.scss';
 import { Screen } from './screen';
+import classNames from 'classnames';
 
 export const ProjectIcons = ({ stack }: { stack: Stack }) => (
   <div className={styles.icons}>
@@ -39,7 +40,14 @@ export const ProjectScreens = ({
   quantity?: number;
 }) => (
   <>
-    <h2 className={styles['project__screen-title']}>Screens</h2>
+    <h2
+      className={classNames(
+        'text-dark capitalize font-poppins font-semibold text-3xl mt-2',
+        styles.title
+      )}
+    >
+      Screens
+    </h2>
     <ul data-testid="screens" className={styles.screens}>
       {screens
         ?.slice(0, quantity && seeMore ? quantity : screens.length)

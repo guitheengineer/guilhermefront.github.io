@@ -1,6 +1,6 @@
 import styles from './presentation.module.scss';
 import Image from 'next/image';
-import { BlueButton, Icon } from 'components';
+import { Button, Icon } from 'components';
 import classNames from 'classnames';
 
 export const Presentation = () => (
@@ -18,7 +18,7 @@ export const Presentation = () => (
         and easy to maintain.
       </p>
       <a href="mailto:guilhermesnd14@gmail.com">
-        <BlueButton type="presentation">Contact</BlueButton>
+        <Button className="mt-6">Contact</Button>
       </a>
     </section>
 
