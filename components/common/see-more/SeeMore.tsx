@@ -11,7 +11,7 @@ export const SeeMore = ({ seeMore, setSeeMore, className }: SeeMoreTypes) => (
     type="button"
     onClick={() => setSeeMore((prevState) => !prevState)}
   >
-    <span className="text-sm">See more</span>
+    <span className="text-sm font-montserrat">See more</span>
     <svg
       className={styles.icon}
       width="13"

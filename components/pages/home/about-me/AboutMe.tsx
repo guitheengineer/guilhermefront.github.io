@@ -1,11 +1,7 @@
-import styles from './about-me.module.scss';
 import { Button, Heading } from 'components';
-import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
 
-const GameBoy = ({ is800 = false }: { is800?: boolean }) => (
-  <Image layout="fill" alt="" src="/assets/gameboy.svg" />
-);
+const GameBoy = () => <Image layout="fill" alt="" src="/assets/gameboy.svg" />;
 
 export const AboutMe = () => {
   return (
@@ -13,7 +9,7 @@ export const AboutMe = () => {
       <div className="lg:mr-24">
         <Heading>About me</Heading>
         <div className="lg:hidden relative mx-auto w-52 h-80 mt-3">
-          <GameBoy is800 />
+          <GameBoy />
         </div>
         <p className="mt-4 text-sm font-montserrat text-suave-clear">
           Playing games since I was a kid, I saw that the challenges I usually

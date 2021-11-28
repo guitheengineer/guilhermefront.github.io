@@ -14,11 +14,9 @@ export const ProjectList = ({ quantity }: Props) => (
   </div>
 );
 
-export const ProjectsGroup = () => {
-  return (
-    <article className="mt-24 md:mt-32">
-      <Heading>Projects</Heading>
-      <ProjectList quantity={6} />
-    </article>
-  );
-};
+export const ProjectsGroup = () => (
+  <article className="mt-24 md:mt-32">
+    <Heading>Projects</Heading>
+    <ProjectList quantity={6} />
+  </article>
+);
