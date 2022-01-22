@@ -23,14 +23,14 @@ export const Work = ({ title, company, role, image, stack }: Props) => {
           styles.work
         )}
       >
-        <div>
-          <h4 className="mt-5 font-medium text-xs font-poppins text-suave-blue capitalize">
+        <div className="flex-shrink-0 py-5">
+          <h4 className="font-medium text-xs font-poppins text-suave-blue capitalize">
             {company}
           </h4>
           <h3 className="font-medium font-poppins mt-5 capitalize">{title}</h3>
           <p className="text-sm capitalize mt-3 text-suave-lighter font-poppins">
             {Array.isArray(role)
-              ? role.reduce((acc, v) => acc + ', ' + v)
+              ? role.map((value) => <p key={value}>{value}</p>)
               : role}
           </p>
           <ul

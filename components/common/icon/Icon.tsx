@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 export type IconProps = {
   title: Tech;
-  type: 'work' | 'profile' | 'skill';
+  type: 'work' | 'profile' | 'skill' | 'project';
   className?: string;
   size?: number;
   imgSize?: number;

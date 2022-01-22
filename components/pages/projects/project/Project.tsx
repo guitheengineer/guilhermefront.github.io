@@ -1,35 +1,61 @@
-import { useState, useCallback } from 'react';
-import styles from './project.module.scss';
-import { OtherProjects, ContactArea, Footer, Nav } from 'components';
-import { useMediaQuery } from 'react-responsive';
+import { OtherProjects, ContactArea } from 'components';
 import { ProjectContent as IProjectContent } from 'types';
-import { ProjectIcons, ProjectRole } from '../project-components';
+import * as ProjectComponents from '../project-components';
+import NextImage from 'next/image';
 
 type ProjectProps = {
   project: IProjectContent;
 };
 
-const ProjectContent = () => {
+type ImageProps = {
+  src: string;
+  alt?: string;
+};
+
+const Image = ({ src, alt }: ImageProps) => (
+  <NextImage src={src} layout="fill" alt={alt} />
+);
+
+const ProjectContent = ({ project }: ProjectProps) => {
   return (
-    <>
-      <ProjectRole role="Fullstack developer" />
-      <ProjectIcons stack={['bootstrap']} />
-    </>
+    <article className="mt-14">
+      <div className="max-w-xs">
+        <ProjectComponents.Role role="Fullstack developer" />
+        <h1 className="text-dark font-semibold text-3xl font-poppins mt-2">
+          Quizby
+        </h1>
+        <p className="font-montserrat text-sm font-medium text-suave-lighter mt-3">
+          Developed and designed from scratch, quizby is a fun quiz app with
+          CRUD operations.
+        </p>
+        <ProjectComponents.Site href="quizby.herokuapp.com" />
+        <ProjectComponents.Icons
+          imgSize={18}
+          stack={[
+            'react',
+            'redux',
+            'typescript',
+            'node',
+            'sass',
+            'mongo',
+            'figma',
+          ]}
+        />
+      </div>
+      <div className="w-2/4 relative">
+        <Image
+          src={`/assets/work-demos/${project.title.replace(/ /g, '-')}.png`}
+          alt={`Demo of ${project.title}`}
+        />
+      </div>
+    </article>
   );
 };
 
 export const Project = ({ project }: ProjectProps) => {
-  const [seeMore, setSeeMore] = useState(false);
-
-  const is768 = useMediaQuery({ maxWidth: 768 });
-
-  const setMore = useCallback(() => {
-    setSeeMore((prevState) => !prevState);
-  }, []);
-
   return (
     <div>
-      <ProjectContent img={`assets/work-demos/${project.title}.png`} />
+      <ProjectContent project={project} />
       <ContactArea />
       <OtherProjects />
     </div>

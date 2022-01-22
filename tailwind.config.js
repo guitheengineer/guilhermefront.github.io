@@ -20,6 +20,7 @@ module.exports = {
           light: '#00d8ff',
         },
         suave: {
+          lightest: '#F8F9FA',
           lighter: '#859fb4',
           light: '#62839d',
           medium: 'hsla(207, 14%, 37%, 1)',
