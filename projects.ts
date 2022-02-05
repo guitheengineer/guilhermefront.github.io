@@ -6,7 +6,7 @@ export const Projects: ProjectsList = [
     company: 'personal project',
     role: 'fullstack developer',
     image: 'first',
-    stack: ['react', 'redux', 'figma', 'mongo', 'sass', 'node', 'typescript'],
+    stack: ['react', 'redux', 'typescript', 'node', 'sass', 'mongo', 'figma'],
     site: 'quizby.herokuapp.com',
     screens: [
       {

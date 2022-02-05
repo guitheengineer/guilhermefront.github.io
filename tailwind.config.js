@@ -1,8 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  purge: ['./components/**/*.{tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./components/**/*.tsx'],
   theme: {
     fontFamily: { poppins: 'Poppins', montserrat: 'Montserrat' },
     container: {
