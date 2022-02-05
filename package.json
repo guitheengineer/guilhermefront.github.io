@@ -12,7 +12,6 @@
     "autoprefixer": "^10.3.2",
     "classnames": "^2.3.1",
     "next": "11.1.0",
-    "postcss": "^8.3.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-responsive": "^9.0.0-beta.3",
@@ -23,6 +22,7 @@
     "tailwindcss": "^2.2.7"
   },
   "devDependencies": {
+    "postcss": "^8.3.6",
     "@types/node": "^14.14.31",
     "@types/react": "^17.0.2",
     "@types/react-responsive": "^8.0.2",
