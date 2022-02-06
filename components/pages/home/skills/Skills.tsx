@@ -6,17 +6,17 @@ export const Skills = () => {
   return (
     <article className="mt-24 relative">
       <Heading className="mt-9">Skills</Heading>
-      <Skill title="react" percentage={73} />
-      <Skill title="nextjs" percentage={76} />
+      <Skill title="react" percentage={77} />
+      <Skill title="nextjs" percentage={80} />
       <Skill title="typescript" percentage={55} />
-      <Skill title="javascript" percentage={73} />
-      <Skill title="bootstrap" percentage={85} />
+      <Skill title="javascript" percentage={75} />
+      <Skill title="bootstrap" percentage={88} />
       <Skill title="sass" percentage={78} />
       {seeMore && (
         <>
           <Skill title="html" percentage={83} />
           <Skill title="redux" percentage={63} />
-          <Skill title="css" percentage={80} />
+          <Skill title="css" percentage={85} />
           <Skill title="storybook" percentage={75} />
           <Skill title="styled-components" percentage={80} />
           <Skill title="formik" percentage={70} />
