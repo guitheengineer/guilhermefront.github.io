@@ -33,3 +33,5 @@ export const Home = () => (
     <Page.AboutMe />
   </div>
 );
+
+Home.className = 'bg-suave-lightest';

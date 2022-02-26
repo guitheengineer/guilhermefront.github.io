@@ -20,6 +20,4 @@ export const getStaticProps: GetStaticProps = ({ params }) => {
   return { props: { project: projectData } };
 };
 
-Project.className = 'bg-suave-lightest';
-
 export default Project;

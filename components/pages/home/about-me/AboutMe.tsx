@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { Button, Heading } from 'components';
+import { Heading } from 'components';
 import Image from 'next/image';
 import { ReactNode } from 'react';
 
@@ -70,7 +70,7 @@ const Info = ({
       </div>
       {imageDesktop ||
         (image && (
-          <div className="hidden lg:block relative w-full mt-3">
+          <div className="hidden lg:block relative w-full h-52 my-auto">
             {/* eslint-disable-next-line jsx-a11y/alt-text */}
             <Image {...imgProps} />
           </div>
@@ -86,7 +86,7 @@ const TextTasksDone = ({ children }: { children: string }) => {
         dangerouslySetInnerHTML={{
           __html: children?.replace(/;/g, '; <br />'),
         }}
-      ></span>
+      />
     </TextContent>
   );
 };
@@ -126,6 +126,11 @@ export const AboutMe = () => {
             </TextContent>
           </>
         }
+        imageDesktop={
+          <div className="hidden lg:block relative w-full h-72 my-auto">
+            <Image layout="fill" src="/assets/home/digital-nomad.svg" alt="" />
+          </div>
+        }
       />
       <Info
         title="Experience"
@@ -134,7 +139,7 @@ export const AboutMe = () => {
         textDate="DEZ 2021 - CURRENTLY / São Paulo"
         image="dev-productivity"
         imageMobile={
-          <div className="lg:hidden relative mx-auto w-52 h-56 mt-3">
+          <div className="lg:hidden relative mx-auto w-52 h-56 mt-4">
             <Image
               layout="fill"
               src="/assets/home/dev-productivity.svg"
@@ -166,10 +171,10 @@ export const AboutMe = () => {
         textDate="MAR 2019 - JAN 2021 / São Paulo"
         imageDesktop={
           <div className="h-full w-full hidden lg:block">
-            <div className="relative w-full h-72 lg:mt-6 xl:mt-16">
+            <div className="relative w-full h-44 lg:mt-16 xl:mt-20">
               <Image layout="fill" src="/assets/home/programming.svg" alt="" />
             </div>
-            <div className="hidden lg:block relative w-full h-72 mt-14">
+            <div className="hidden lg:block relative w-full h-56 mt-32">
               <Image
                 layout="fill"
                 src="/assets/home/feeling-proud.svg"
@@ -179,7 +184,7 @@ export const AboutMe = () => {
           </div>
         }
         imageMobile={
-          <div className="lg:hidden relative mx-auto w-72 h-60 mt-4">
+          <div className="lg:hidden relative mx-auto w-72 h-44 mt-10 mb-9">
             <Image layout="fill" src="/assets/home/programming.svg" alt="" />
           </div>
         }
@@ -204,15 +209,15 @@ export const AboutMe = () => {
               - Defining the correct project structure for working with hooks,
               utils and components; - Dozens of mobile-first landing pages with
               great responsiveness using bootstrap and styled-components for
-              styles; - Several components (developed with acessibility in mind)
-              documented with storybook; - Autentication using JWT made with
-              axios and it&apos;s interceptors; - Several api requests for
+              styles; - Several components (developed with accessibility in
+              mind) documented with storybook; - Authentication using JWT made
+              with axios and it&apos;s interceptors; - Several api requests for
               bringing data with react-query; - Excellent performance
-              improvements leading to a very good pagespeed score; -
-              Codereviews; - Created a flexible component library for reusing
-              across different projects; - Extended bootstrap to create a
-              ready-to-use design system; - Worked with gitflow for managing a
-              better versioning;
+              improvements leading to a very good pagespeed score; - Code
+              reviews; - Created a flexible component library for reusing across
+              different projects; - Extended bootstrap to create a ready-to-use
+              design system; - Worked with gitflow for managing a better
+              versioning;
             </TextTasksDone>
           </>
         }
@@ -223,12 +228,12 @@ export const AboutMe = () => {
         subTitle="Analysis and Systems Development, FECAF"
         textDate="FEB 2019 - MAY 2021 / São Paulo"
         imageMobile={
-          <div className="lg:hidden relative mx-auto w-72 h-60 mt-6 mb-7">
+          <div className="lg:hidden relative mx-auto w-72 h-48 mt-6 mb-7">
             <Image layout="fill" src="/assets/home/reading.svg" alt="" />
           </div>
         }
         imageDesktop={
-          <div className="hidden lg:block relative w-full h-72 -mt-16">
+          <div className="hidden lg:block relative w-full h-48 -mt-2">
             <Image layout="fill" src="/assets/home/reading.svg" alt="" />
           </div>
         }
