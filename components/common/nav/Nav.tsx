@@ -1,14 +1,13 @@
-import styles from './nav.module.scss';
 import Link from 'next/link';
 import classNames from 'classnames';
 import Image from 'next/image';
 
-type Props = {
+type NavProps = {
   title: 'github' | 'linkedin';
   size?: number;
 };
 
-export const PersonalIcon = ({ title, size = 19 }: Props) => (
+export const PersonalIcon = ({ title, size = 19 }: NavProps) => (
   <a
     title="personal icon link"
     href={

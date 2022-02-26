@@ -42,7 +42,7 @@ const Info = ({
   const imgProps = {
     layout: 'fill',
     alt: '',
-    src: `/assets/home/${image}.svg`,
+    src: `/assets/home/illustrations/${image}.svg`,
   } as const;
 
   return (
@@ -128,7 +128,11 @@ export const AboutMe = () => {
         }
         imageDesktop={
           <div className="hidden lg:block relative w-full h-72 my-auto">
-            <Image layout="fill" src="/assets/home/digital-nomad.svg" alt="" />
+            <Image
+              layout="fill"
+              src="/assets/home/illustrations/digital-nomad.svg"
+              alt=""
+            />
           </div>
         }
       />
@@ -142,7 +146,7 @@ export const AboutMe = () => {
           <div className="lg:hidden relative mx-auto w-52 h-56 mt-4">
             <Image
               layout="fill"
-              src="/assets/home/dev-productivity.svg"
+              src="/assets/home/illustrations/dev-productivity.svg"
               alt=""
             />
           </div>
@@ -172,12 +176,16 @@ export const AboutMe = () => {
         imageDesktop={
           <div className="h-full w-full hidden lg:block">
             <div className="relative w-full h-44 lg:mt-16 xl:mt-20">
-              <Image layout="fill" src="/assets/home/programming.svg" alt="" />
+              <Image
+                layout="fill"
+                src="/assets/home/illustrations/programming.svg"
+                alt=""
+              />
             </div>
             <div className="hidden lg:block relative w-full h-56 mt-32">
               <Image
                 layout="fill"
-                src="/assets/home/feeling-proud.svg"
+                src="/assets/home/illustrations/feeling-proud.svg"
                 alt=""
               />
             </div>
@@ -185,7 +193,11 @@ export const AboutMe = () => {
         }
         imageMobile={
           <div className="lg:hidden relative mx-auto w-72 h-44 mt-10 mb-9">
-            <Image layout="fill" src="/assets/home/programming.svg" alt="" />
+            <Image
+              layout="fill"
+              src="/assets/home/illustrations/programming.svg"
+              alt=""
+            />
           </div>
         }
         content={
@@ -229,12 +241,20 @@ export const AboutMe = () => {
         textDate="FEB 2019 - MAY 2021 / São Paulo"
         imageMobile={
           <div className="lg:hidden relative mx-auto w-72 h-48 mt-6 mb-7">
-            <Image layout="fill" src="/assets/home/reading.svg" alt="" />
+            <Image
+              layout="fill"
+              src="/assets/home/illustrations/reading.svg"
+              alt=""
+            />
           </div>
         }
         imageDesktop={
           <div className="hidden lg:block relative w-full h-48 -mt-2">
-            <Image layout="fill" src="/assets/home/reading.svg" alt="" />
+            <Image
+              layout="fill"
+              src="/assets/home/illustrations/reading.svg"
+              alt=""
+            />
           </div>
         }
         content={

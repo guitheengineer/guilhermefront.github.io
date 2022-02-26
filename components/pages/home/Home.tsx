@@ -28,7 +28,7 @@ export const Home = () => (
       />
     </Head>
     <Page.Presentation />
-    <Page.ProjectsGroup />
+    <Page.ProjectsSection />
     <Page.Skills />
     <Page.AboutMe />
   </div>

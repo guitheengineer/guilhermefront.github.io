@@ -1,12 +1,12 @@
 import classNames from 'classnames';
 import { ReactNode } from 'react';
 
-type Props = {
+type ButtonProps = {
   children: ReactNode;
   className?: string;
 };
 
-export const Button = ({ children, className = 'my-6' }: Props) => (
+export const Button = ({ children, className = 'my-6' }: ButtonProps) => (
   <button
     type="button"
     className={classNames(

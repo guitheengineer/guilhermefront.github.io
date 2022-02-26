@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 type ContentTypes = 'story' | 'challenges' | 'lessons learned';
 
-type Props = {
+type ContentProps = {
   children: ReactNode;
   type: ContentTypes;
   marginTop?: number;
@@ -32,7 +32,7 @@ const Description = ({ children }: { children: ReactNode }) => (
   </p>
 );
 
-export const Content = ({ children, type }: Props) => {
+export const Content = ({ children, type }: ContentProps) => {
   const is768 = useMediaQuery({ maxWidth: 768 });
 
   if (is768) {
@@ -41,7 +41,9 @@ export const Content = ({ children, type }: Props) => {
         <div className="max-w-md">
           <Title>{type}</Title>
           {type === 'story' && (
-            <div className="flex-1 flex content-center items-center lg:my-10 lg:content-start"></div>
+            <div className="flex-1 flex content-center items-center lg:my-10 lg:content-start">
+              <Illustration type={type} />
+            </div>
           )}
           {type === 'lessons learned' && (
             <div className="flex-1 flex content-center items-center">

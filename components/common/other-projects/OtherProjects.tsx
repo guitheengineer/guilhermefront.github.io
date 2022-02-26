@@ -1,5 +1,4 @@
-import styles from './other-projects.module.scss';
-import { ProjectList } from 'components/pages/home/projects-group/ProjectsGroup';
+import { ProjectList } from 'components/pages/home/projects-section/ProjectsSection';
 import { Heading } from 'components';
 
 export const OtherProjects = () => {

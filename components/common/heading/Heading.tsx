@@ -2,11 +2,11 @@ import classNames from 'classnames';
 import { ReactNode } from 'react';
 import styles from './heading.module.scss';
 
-type Props = {
+type HeadingProps = {
   children: ReactNode;
   className?: string;
 };
 
-export const Heading = ({ children, className }: Props) => (
+export const Heading = ({ children, className }: HeadingProps) => (
   <h6 className={classNames(styles.heading, className)}>{children}</h6>
 );
