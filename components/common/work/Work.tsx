@@ -1,6 +1,6 @@
 import { Companies, Projects, Stack } from 'types';
 import { WorkImage } from './WorkImage';
-import { Icon } from 'components';
+import { Icon } from '../icon';
 import Link from 'next/link';
 import styles from './work.module.scss';
 import classNames from 'classnames';

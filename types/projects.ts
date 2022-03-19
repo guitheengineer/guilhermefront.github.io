@@ -39,9 +39,9 @@ export type Stack = Tech[];
 
 export type Role = string | string[];
 
-export type Screens = { title: string; image?: string; description: string }[];
+export type ScreensInfo = string[];
 
-export type ProjectContent = {
+export type ProjectInfo = {
   title: Projects;
   company: Companies;
   role: Role;
@@ -53,13 +53,13 @@ export type ProjectContent = {
   learned: string;
   shortDescription: string;
   site: string;
-  screens?: Screens;
+  screens?: ScreensInfo;
 };
 
-export type ProjectsList = ProjectContent[];
+export type ProjectsList = ProjectInfo[];
 
 export type ProjectContentProps = SeeMoreTypes & {
   img: string;
   is768: boolean;
-  projectData: ProjectContent;
+  projectData: ProjectInfo;
 };

@@ -8,56 +8,11 @@ export const Projects: ProjectsList = [
     image: 'first',
     stack: ['react', 'redux', 'typescript', 'node', 'sass', 'mongo', 'figma'],
     site: 'quizby.herokuapp.com',
-    screens: [
-      {
-        title: 'Home',
-        description:
-          'Website visitors can play with a demo in the landing page. Other core functionalities are shown as well.',
-      },
-      {
-        title: 'Gaming',
-        description:
-          'Testing knowledge is fun with quizby. The design is clean and animations are cool. Users can see the answers history and acknowledge if their past answer as correct or wrong.',
-      },
-      {
-        title: 'Completed',
-        description:
-          'Users can see their final results shown nicely by a donut chart (using      my library react-donut-chart). It’s also possible to play again or go      back to see other quizzes.',
-      },
-      {
-        title: 'Signup and login forms',
-        description:
-          'Using Material UI textfield components facilitated not only the user accessibility, but the errors shown by validating the forms.',
-      },
-      {
-        title: 'User profile',
-        description:
-          'Stats, created quizzes and played ones was nicely shown on this profile section. Here, users that are authenticated can edit their own quizzes',
-      },
-      {
-        title: 'Quizzes',
-        description:
-          'Users can search efficiently any quizzes they want to play. Also is shown the most played ones and categories to search for.',
-      },
-      {
-        title: 'Categories',
-        description: 'Users can search for quizzes by category.',
-      },
-      {
-        title: 'View quiz',
-        description:
-          'Here’s where the quiz info is shown before user start playing.',
-      },
-      {
-        title: 'Menu',
-        description:
-          'Menu is shown with a nice dropdown animation so users still have the experience that they’re inside the game.',
-      },
-    ],
+    screens: ['home', 'signup', 'login'],
     shortDescription:
       'Developed and designed from scratch, quizby is a fun quiz app with CRUD operations.',
     description:
-      'Quizby aims to be a quiz app which users can search for quizzes, get recomended ones and create their own, so they can share with friends.',
+      'Quizby aims to be a quiz app which users can search for quizzes, get recommended ones and create their own so they can share with friends.',
     story:
       'There’re many aim trainers out there, but they fail on one crucial user demand: the ability to customize their experience. Only themselves understand the weakness that need to be trained, so with BetterAim players can change almost everything to fit their needs and extract the most productive training to improve.',
     challenges:

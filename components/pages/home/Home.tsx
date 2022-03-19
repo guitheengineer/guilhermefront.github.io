@@ -1,5 +1,5 @@
-import * as Page from '.';
 import Head from 'next/head';
+import { AboutMe, Presentation, ProjectsSection, Skills } from '.';
 
 export const Home = () => (
   <div data-testid="Home">
@@ -27,10 +27,10 @@ export const Home = () => (
         content="https://i.ibb.co/XJ0sS8r/image.png"
       />
     </Head>
-    <Page.Presentation />
-    <Page.ProjectsSection />
-    <Page.Skills />
-    <Page.AboutMe />
+    <Presentation />
+    <ProjectsSection />
+    <Skills />
+    <AboutMe />
   </div>
 );
 

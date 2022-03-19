@@ -25,7 +25,7 @@ const Info = ({
   imageDesktop,
   imageMobile,
 }: {
-  content: ReactNode;
+  content: React.ReactNode;
   image?:
     | 'digital-nomad'
     | 'programming'
@@ -36,8 +36,8 @@ const Info = ({
   subTitle?: string;
   textDate?: string;
   className?: string;
-  imageDesktop?: ReactNode;
-  imageMobile?: ReactNode;
+  imageDesktop?: React.ReactNode;
+  imageMobile?: React.ReactNode;
 }) => {
   const imgProps = {
     layout: 'fill',

@@ -1,9 +1,9 @@
 import classNames from 'classnames';
-import { ReactNode } from 'react';
+import * as React from 'react';
 import styles from './heading.module.scss';
 
 type HeadingProps = {
-  children: ReactNode;
+  children: React.ReactNode;
   className?: string;
 };
 

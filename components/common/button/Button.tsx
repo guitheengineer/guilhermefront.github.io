@@ -1,8 +1,8 @@
 import classNames from 'classnames';
-import { ReactNode } from 'react';
+import * as React from 'react';
 
 type ButtonProps = {
-  children: ReactNode;
+  children: React.ReactNode;
   className?: string;
 };
 
