@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import { SeeMoreTypes } from 'types';
-import styles from './see-more.module.scss';
 
 export const SeeMore = ({ seeMore, setSeeMore, className }: SeeMoreTypes) => (
   <button
@@ -13,7 +12,7 @@ export const SeeMore = ({ seeMore, setSeeMore, className }: SeeMoreTypes) => (
   >
     <span className="text-sm font-montserrat">See more</span>
     <svg
-      className={styles.icon}
+      className="ml-3"
       width="13"
       height="8"
       style={{ transform: seeMore ? `rotate(180deg)` : `rotate(0deg)` }}

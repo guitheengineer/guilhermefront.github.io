@@ -9,7 +9,8 @@ module.exports = {
       padding: {
         DEFAULT: defaultTheme.spacing[6],
         lg: defaultTheme.spacing[9],
-        xl: defaultTheme.spacing[56],
+        xl: defaultTheme.spacing[48],
+        '2xl': defaultTheme.spacing[56],
       },
     },
     extend: {

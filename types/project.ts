@@ -1,6 +1,6 @@
 import { SetStateAction } from 'react';
 
-export type Projects =
+export type ProjectKeys =
   | 'quizby'
   | 'betteraim'
   | 'budget estimator'
@@ -42,16 +42,10 @@ export type Role = string | string[];
 export type ScreensInfo = string[];
 
 export type ProjectInfo = {
-  title: Projects;
+  title: ProjectKeys;
   company: Companies;
-  role: Role;
-  image: 'first';
   stack: Stack;
   description: string;
-  story: string;
-  challenges: string;
-  learned: string;
-  shortDescription: string;
   site: string;
   screens?: ScreensInfo;
 };

@@ -1,7 +1,7 @@
-import styles from './presentation.module.scss';
 import Image from 'next/image';
 import { Button, Icon } from 'components';
 import classNames from 'classnames';
+import styles from './presentation.module.scss';
 
 export const Presentation = () => (
   <div className="mt-28 flex justify-between items-center">
@@ -23,10 +23,9 @@ export const Presentation = () => (
     </section>
 
     <aside
-      className={classNames(
-        'hidden md:flex mr-16 bg-white flex-col justify-center h-56 rounded-xl -top-2 relative',
-        styles.profile
-      )}
+      className={
+        'hidden md:flex mr-16 bg-white flex-col justify-center h-56 rounded-xl -top-2 relative max-w-[258px] min-w-[230px] shadow-[0_50px_30px_rgba(0,59,108,0.06)]'
+      }
     >
       <div className="flex flex-col items-center">
         <div
@@ -51,7 +50,7 @@ export const Presentation = () => (
           São Paulo - Brazil
         </p>
       </div>
-      <ul className={classNames('absolute', styles.icons)}>
+      <ul className="absolute w-[235px] h-[235px]">
         <Icon type="profile" imgSize={24} title="react" />
         <Icon type="profile" title="redux" />
         <Icon type="profile" imgSize={22} title="typescript" />

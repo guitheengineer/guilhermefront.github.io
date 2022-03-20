@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 export type IconProps = {
   title: Tech;
-  type: 'work' | 'profile' | 'skill' | 'project';
+  type: 'work' | 'profile' | 'skill';
   className?: string;
   size?: number;
   imgSize?: number;
@@ -21,18 +21,15 @@ export const Icon = ({
   return (
     <div
       title={title}
-      style={
-        !className
-          ? {
-              width: size,
-              height: size,
-            }
-          : undefined
-      }
+      style={{
+        width: size,
+        height: size,
+      }}
       className={classNames(
-        styles.icon,
+        'flex rounded-full justify-center items-center cursor-pointer bg-[#e3eef7]',
         styles[type],
-        styles[`${type}${title}`]
+        styles[`${type}${title}`],
+        className
       )}
     >
       <Image

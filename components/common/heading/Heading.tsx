@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import * as React from 'react';
-import styles from './heading.module.scss';
 
 type HeadingProps = {
   children: React.ReactNode;
@@ -8,5 +7,12 @@ type HeadingProps = {
 };
 
 export const Heading = ({ children, className }: HeadingProps) => (
-  <h6 className={classNames(styles.heading, className)}>{children}</h6>
+  <h6
+    className={classNames(
+      'font-bold text-sm font-montserrat text-dark',
+      className
+    )}
+  >
+    {children}
+  </h6>
 );

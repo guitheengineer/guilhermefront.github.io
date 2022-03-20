@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import { AboutMe, Presentation, ProjectsSection, Skills } from '.';
+import { AboutMe, Presentation, Skills } from '.';
+import { Heading, ProjectList } from 'components';
 
 export const Home = () => (
   <div data-testid="Home">
@@ -28,7 +29,10 @@ export const Home = () => (
       />
     </Head>
     <Presentation />
-    <ProjectsSection />
+    <article className="mt-24 md:mt-32">
+      <Heading>Projects</Heading>
+      <ProjectList quantity={6} />
+    </article>
     <Skills />
     <AboutMe />
   </div>

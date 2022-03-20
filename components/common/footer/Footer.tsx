@@ -1,8 +1,5 @@
-import classNames from 'classnames';
-import styles from './footer.module.scss';
-
 export const Footer = () => (
-  <div className={classNames('w-full h-28', styles.footer)}>
+  <footer className="w-full h-28 bg-[#e7eff4]">
     <div className="container h-full flex items-center justify-center md:justify-between">
       <p className="font-black text-xs font-montserrat text-suave-clear hidden md:block">
         Your feedback is appreciated!
@@ -16,5 +13,5 @@ export const Footer = () => (
         guilhermesnd14@gmail.com
       </p>
     </div>
-  </div>
+  </footer>
 );
