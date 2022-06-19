@@ -1,13 +1,6 @@
 .work {
   background: #fff;
   box-shadow: 0 50px 30px rgba(0, 59, 108, 0.06);
-
-  transition: all 0.3s;
-
-  &:hover {
-    transition: all 0.3s;
-    transform: scale(1.02);
-  }
 }
 
 .info {
@@ -21,7 +14,5 @@
 }
 
 .stack {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
